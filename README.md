@@ -4,7 +4,7 @@
 | #   | Category               | Project Idea                                   | 🎯 Difficulty | 🧱 Stack           | ✅ Status       |
 |-----|-------------------------|-----------------------------------------------|---------------|--------------------|----------------|
 | 1   | 🔰 Beginner            | To-do List API                                | Easy          | Node.js            | ✅ Done  |
-| 2   | 🔰 Beginner            | Calculator API                                | Easy          | Node.js            | ☐ Not Started  |
+| 2   | 🔰 Beginner            | Calculator API                                | Easy          | Node.js            | ✅ Done   |
 | 3   | 🔰 Beginner            | Weather Info API (mock)                       | Easy          | Node.js            | ☐ Not Started  |
 | 4   | 🔰 Beginner            | Quotes API                                    | Easy          | Node.js            | ☐ Not Started  |
 | 5   | 🔰 Beginner            | Currency Converter API (static)               | Easy          | Node.js            | ☐ Not Started  |
