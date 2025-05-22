@@ -4,18 +4,18 @@ const QuotesController = require('../controllers/quotesController');
 const quotesController = new QuotesController();
 
 // GET all quotes
-router.get('/', quotesController.getAllQuotes);
+router.get('/', (req, res) => quotesController.getAllQuotes(req, res));
 
 // GET a quote by ID
-router.get('/:id', quotesController.getQuoteById);
+router.get('/:id', (req, res) => quotesController.getQuoteById(req, res));
 
 // POST a new quote
-router.post('/', quotesController.createQuote);
+router.post('/', (req, res) => quotesController.createQuote(req, res));
 
 // PUT (update) a quote by ID
-router.put('/:id', quotesController.updateQuote);
+router.put('/:id', (req, res) => quotesController.updateQuote(req, res));
 
 // DELETE a quote by ID
-router.delete('/:id', quotesController.deleteQuote);
+router.delete('/:id', (req, res) => quotesController.deleteQuote(req, res));
 
 module.exports = router;
