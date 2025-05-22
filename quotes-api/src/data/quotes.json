@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "author": "Albert Einstein",
+        "text": "Life is like riding a bicycle. To keep your balance, you must keep moving.",
+        "category": "inspiration"
+    },
+    {
+        "id": 2,
+        "author": "Isaac Newton",
+        "text": "If I have seen further it is by standing on the shoulders of giants.",
+        "category": "wisdom"
+    },
+    {
+        "id": 3,
+        "author": "Maya Angelou",
+        "text": "You will face many defeats in life, but never let yourself be defeated.",
+        "category": "courage"
+    },
+    {
+        "id": 4,
+        "author": "Nelson Mandela",
+        "text": "It always seems impossible until it is done.",
+        "category": "perseverance"
+    },
+    {
+        "id": 5,
+        "author": "Steve Jobs",
+        "text": "Your time is limited, so don’t waste it living someone else’s life.",
+        "category": "motivation"
+    }
+]
