@@ -7,9 +7,9 @@
 | 2   | 🔰 Beginner            | Calculator API                                | Easy          | Node.js            | ✅ Done   |
 | 3   | 🔰 Beginner            | Weather Info API (mock)                       | Easy          | Node.js            | ✅ Done   |
 | 4   | 🔰 Beginner            | Quotes API                                    | Easy          | Node.js            | ✅ Done   |
-| 5   | 🔰 Beginner            | Currency Converter API (static)               | Easy          | Node.js            | ☐ Not Started  |
-| 6   | 🔰 Beginner            | User Registration/Login (no DB)               | Easy          | Node.js            | ☐ Not Started  |
-| 7   | 🔰 Beginner            | Form Submission Handler                       | Easy          | Node.js            | ☐ Not Started  |
+| 5   | 🔰 Beginner            | Currency Converter API (static)               | Easy          | Node.js            | ✅ Done  |
+| 6   | 🔰 Beginner            | User Registration/Login (no DB)               | Easy          | Node.js            | ✅ Done |
+| 7   | 🔰 Beginner            | Form Submission Handler                       | Easy          | Node.js            | ✅ Done  |
 | 8   | 🔰 Beginner            | Palindrome Checker API                        | Easy          | Node.js            | ☐ Not Started  |
 | 9   | 🔰 Beginner            | Notes API (in-memory CRUD)                    | Easy          | Node.js            | ☐ Not Started  |
 | 10  | 🔰 Beginner            | Basic Blog API (posts only)                   | Easy          | Node.js            | ☐ Not Started  |
