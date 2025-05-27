@@ -10,7 +10,7 @@
 | 5   | 🔰 Beginner            | Currency Converter API (static)               | Easy          | Node.js            | ✅ Done  |
 | 6   | 🔰 Beginner            | User Registration/Login (no DB)               | Easy          | Node.js            | ✅ Done |
 | 7   | 🔰 Beginner            | Form Submission Handler                       | Easy          | Node.js            | ✅ Done  |
-| 8   | 🔰 Beginner            | Palindrome Checker API                        | Easy          | Node.js            | ☐ Not Started  |
+| 8   | 🔰 Beginner            | Palindrome Checker API                        | Easy          | Node.js            | ✅ Done   |
 | 9   | 🔰 Beginner            | Notes API (in-memory CRUD)                    | Easy          | Node.js            | ☐ Not Started  |
 | 10  | 🔰 Beginner            | Basic Blog API (posts only)                   | Easy          | Node.js            | ☐ Not Started  |
 | 11  | 🔰 Beginner            | Mock E-commerce Products API                  | Easy          | Node.js            | ☐ Not Started  |
