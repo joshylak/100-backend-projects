@@ -11,7 +11,7 @@
 | 6   | 🔰 Beginner            | User Registration/Login (no DB)               | Easy          | Node.js            | ✅ Done |
 | 7   | 🔰 Beginner            | Form Submission Handler                       | Easy          | Node.js            | ✅ Done  |
 | 8   | 🔰 Beginner            | Palindrome Checker API                        | Easy          | Node.js            | ✅ Done   |
-| 9   | 🔰 Beginner            | Notes API (in-memory CRUD)                    | Easy          | Node.js            | ☐ Not Started  |
+| 9   | 🔰 Beginner            | Notes API (in-memory CRUD)                    | Easy          | Node.js            | ✅ Done    |
 | 10  | 🔰 Beginner            | Basic Blog API (posts only)                   | Easy          | Node.js            | ☐ Not Started  |
 | 11  | 🔰 Beginner            | Mock E-commerce Products API                  | Easy          | Node.js            | ☐ Not Started  |
 | 12  | 🔰 Beginner            | IP Lookup Service                             | Easy          | Node.js            | ☐ Not Started  |
