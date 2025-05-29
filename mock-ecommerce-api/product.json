@@ -1,0 +1,314 @@
+{
+	"info": {
+		"_postman_id": "YOUR_POSTMAN_COLLECTION_ID_HERE",
+		"name": "Mock E-commerce Products API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_collection_id": "YOUR_POSTMAN_COLLECTION_ID_HERE_AGAIN"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Get All Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/products?search=headphones&category=Electronics&minPrice=50&sortBy=price&order=asc",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "headphones",
+									"description": "Search term for product name, description, or category",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "Electronics",
+									"description": "Filter by product category",
+									"disabled": true
+								},
+								{
+									"key": "minPrice",
+									"value": "50",
+									"description": "Filter by minimum price",
+									"disabled": true
+								},
+								{
+									"key": "maxPrice",
+									"value": "100",
+									"description": "Filter by maximum price",
+									"disabled": true
+								},
+								{
+									"key": "sortBy",
+									"value": "price",
+									"description": "Field to sort by (e.g., name, price, stock, rating)",
+									"disabled": true
+								},
+								{
+									"key": "order",
+									"value": "asc",
+									"description": "Sort order (asc or desc)",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Retrieves a list of all mock products. Supports optional filtering by search term, category, price range, and sorting."
+					},
+					"response": [
+						{
+							"name": "Example: All Products",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/products",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"prod_1\",\n        \"name\": \"Wireless Bluetooth Headphones\",\n        \"description\": \"High-fidelity audio with comfortable over-ear design. Up to 20 hours battery life.\",\n        \"price\": 75.99,\n        \"category\": \"Electronics\",\n        \"imageUrl\": \"https://example.com/headphones.jpg\",\n        \"stock\": 150,\n        \"rating\": 4.5\n    },\n    {\n        \"id\": \"prod_2\",\n        \"name\": \"Organic Cotton T-Shirt\",\n        \"description\": \"Soft and breathable 100% organic cotton t-shirt. Available in multiple colors.\",\n        \"price\": 25,\n        \"category\": \"Apparel\",\n        \"imageUrl\": \"https://example.com/tshirt.jpg\",\n        \"stock\": 300,\n        \"rating\": 4.2\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Product by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/products/prod_1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"products",
+								"prod_1"
+							]
+						},
+						"description": "Retrieves a single product by its unique ID."
+					},
+					"response": [
+						{
+							"name": "Example: Single Product",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/products/prod_1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"products",
+										"prod_1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"prod_1\",\n    \"name\": \"Wireless Bluetooth Headphones\",\n    \"description\": \"High-fidelity audio with comfortable over-ear design. Up to 20 hours battery life.\",\n    \"price\": 75.99,\n    \"category\": \"Electronics\",\n    \"imageUrl\": \"https://example.com/headphones.jpg\",\n    \"stock\": 150,\n    \"rating\": 4.5\n}"
+						}
+					]
+				},
+				{
+					"name": "Add New Product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Smartwatch Pro X\",\n    \"description\": \"Advanced smartwatch with health tracking and long battery life.\",\n    \"price\": 129.99,\n    \"category\": \"Wearables\",\n    \"imageUrl\": \"https://example.com/smartwatch.jpg\",\n    \"stock\": 200,\n    \"rating\": 0\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/products",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"products"
+							]
+						},
+						"description": "Adds a new product to the in-memory store. A unique ID will be generated automatically."
+					},
+					"response": [
+						{
+							"name": "Example: New Product Added",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Smartwatch Pro X\",\n    \"description\": \"Advanced smartwatch with health tracking and long battery life.\",\n    \"price\": 129.99,\n    \"category\": \"Wearables\",\n    \"imageUrl\": \"https://example.com/smartwatch.jpg\",\n    \"stock\": 200,\n    \"rating\": 0\n}"
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"new_prod_id\",\n    \"name\": \"Smartwatch Pro X\",\n    \"description\": \"Advanced smartwatch with health tracking and long battery life.\",\n    \"price\": 129.99,\n    \"category\": \"Wearables\",\n    \"imageUrl\": \"https://example.com/smartwatch.jpg\",\n    \"stock\": 200,\n    \"rating\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"price\": 119.99,\n    \"stock\": 180\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/products/prod_1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"products",
+								"prod_1"
+							]
+						},
+						"description": "Updates an existing product's details by ID. Provide only the fields you wish to update."
+					},
+					"response": [
+						{
+							"name": "Example: Product Updated",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"price\": 119.99,\n    \"stock\": 180\n}"
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"prod_1\",\n    \"name\": \"Wireless Bluetooth Headphones\",\n    \"description\": \"High-fidelity audio with comfortable over-ear design. Up to 20 hours battery life.\",\n    \"price\": 119.99,\n    \"category\": \"Electronics\",\n    \"imageUrl\": \"https://example.com/headphones.jpg\",\n    \"stock\": 180,\n    \"rating\": 4.5\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/products/prod_5",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"products",
+								"prod_5"
+							]
+						},
+						"description": "Deletes a product by its unique ID."
+					},
+					"response": [
+						{
+							"name": "Example: Product Deleted",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/products/prod_5",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"products",
+										"prod_5"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:3000",
+			"type": "string",
+			"description": "Base URL for the Mock E-commerce Products API"
+		}
+	]
+}
