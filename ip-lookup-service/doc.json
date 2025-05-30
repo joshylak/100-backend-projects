@@ -1,0 +1,85 @@
+{
+  "info": {
+    "_postman_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "name": "IP Lookup Service",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Lookup IP Information",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/lookup?ip=8.8.8.8",
+          "host": ["{{base_url}}"],
+          "path": ["lookup"],
+          "query": [
+            {
+              "key": "ip",
+              "value": "8.8.8.8",
+              "description": "Optional IP address to lookup (omit for client IP)"
+            }
+          ]
+        },
+        "description": "Get geolocation and network information for an IP address"
+      },
+      "response": []
+    },
+    {
+      "name": "Lookup Client IP Information",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/lookup",
+          "host": ["{{base_url}}"],
+          "path": ["lookup"]
+        },
+        "description": "Get information for the client's own IP address"
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:3000",
+      "description": "Base URL for the API"
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "exec": [
+          ""
+        ],
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "exec": [
+          "pm.test(\"Status code is 200\", function () {",
+          "    pm.response.to.have.status(200);",
+          "});",
+          "",
+          "pm.test(\"Response has required fields\", function () {",
+          "    const jsonData = pm.response.json();",
+          "    pm.expect(jsonData).to.have.property('ip');",
+          "    pm.expect(jsonData).to.have.property('city');",
+          "    pm.expect(jsonData).to.have.property('country');",
+          "    pm.expect(jsonData).to.have.property('loc');",
+          "});"
+        ],
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "auth": {
+    "type": "noauth"
+  },
+  "protocolProfileBehavior": {}
+}
