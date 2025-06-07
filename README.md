@@ -22,7 +22,7 @@
 | 17  | 🔰 Beginner            | Local Storage with FileSystem (JSON DB)       | Easy          | Node.js            | ✅Done  |
 | 18  | 🔰 Beginner            | REST Countries API Clone                      | Easy          | Node.js            | ✅Done  |
 | 19  | 🔐 Authentication      | JWT Auth API                                  | Medium        | Node.js/JWT        | ✅Done  |
-| 20  | 🔐 Authentication      | Session-Based Auth                            | Medium        | Node.js/Express    | ☐ Not Started  |
+| 20  | 🔐 Authentication      | Session-Based Auth                            | Medium        | Node.js/Express    | ✅Done   |
 | 21  | 🔐 Authentication      | OAuth Login (Google, GitHub)                  | Medium        | Node.js/OAuth2     | ☐ Not Started  |
 | 22  | 🔐 Authentication      | Password Reset via Email                      | Medium        | Node.js/Nodemailer | ☐ Not Started  |
 | 23  | 🔐 Authentication      | 2FA Implementation                            | Hard          | Node.js/TOTP       | ☐ Not Started  |
