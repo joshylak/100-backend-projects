@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "email": "adeyemolakin2@gmail.com",
+    "password": "$2b$10$YJ1Dc5L2ttUSkHRCiUksWuN96f/S2WmHbKzI.Xk7HGIlhDSoyb2nS",
+    "resetToken": null,
+    "resetTokenExpire": null
+  }
+]
