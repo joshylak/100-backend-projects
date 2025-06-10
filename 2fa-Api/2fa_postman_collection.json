@@ -1,0 +1,125 @@
+{
+  "info": {
+    "_postman_id": "3f973a27-35f5-4ab6-a410-2fa-collection-demo",
+    "name": "2FA Node.js Demo",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1️⃣ Signup",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"demo\",\n  \"password\": \"password123\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/signup",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["signup"]
+        }
+      }
+    },
+    {
+      "name": "2️⃣ Login (Stage 1)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"demo\",\n  \"password\": \"password123\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/login",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["login"]
+        }
+      }
+    },
+    {
+      "name": "3️⃣ 2FA Setup (Get QR Code)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"demo\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/2fa/setup",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["2fa", "setup"]
+        }
+      }
+    },
+    {
+      "name": "4️⃣ Verify 2FA Setup Token",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"demo\",\n  \"token\": \"123456\" // Replace with real token from Authenticator\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/2fa/verify-setup",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["2fa", "verify-setup"]
+        }
+      }
+    },
+    {
+      "name": "5️⃣ Verify 2FA Login Token",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"demo\",\n  \"token\": \"123456\" // Replace with valid token\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/2fa/verify-login",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["2fa", "verify-login"]
+        }
+      }
+    },
+    {
+      "name": "6️⃣ Protected Route",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{jwt_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/protected",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["protected"]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "jwt_token",
+      "value": ""
+    }
+  ]
+}

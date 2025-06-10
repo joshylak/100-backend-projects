@@ -24,8 +24,8 @@
 | 19  | 🔐 Authentication      | JWT Auth API                                  | Medium        | Node.js/JWT        | ✅Done  |
 | 20  | 🔐 Authentication      | Session-Based Auth                            | Medium        | Node.js/Express    | ✅Done   |
 | 21  | 🔐 Authentication      | OAuth Login (Google, GitHub)                  | Medium        | Node.js/OAuth2     | ✅Done  |
-| 22  | 🔐 Authentication      | Password Reset via Email                      | Medium        | Node.js/Nodemailer | ☐ Not Started  |
-| 23  | 🔐 Authentication      | 2FA Implementation                            | Hard          | Node.js/TOTP       | ☐ Not Started  |
+| 22  | 🔐 Authentication      | Password Reset via Email                      | Medium        | Node.js/Nodemailer | ✅Done |
+| 23  | 🔐 Authentication      | 2FA Implementation                            | Hard          | Node.js/TOTP       | ✅Done  |
 | 24  | 🔐 Authentication      | Role-Based Access Control                     | Medium        | Node.js            | ☐ Not Started  |
 | 25  | 🔐 Authentication      | Admin Dashboard API                           | Medium        | Node.js            | ☐ Not Started  |
 | 26  | 🔐 Authentication      | User Activity Logging                         | Medium        | Node.js            | ☐ Not Started  |
