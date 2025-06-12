@@ -26,8 +26,8 @@
 | 21  | 🔐 Authentication      | OAuth Login (Google, GitHub)                  | Medium        | Node.js/OAuth2     | ✅Done  |
 | 22  | 🔐 Authentication      | Password Reset via Email                      | Medium        | Node.js/Nodemailer | ✅Done |
 | 23  | 🔐 Authentication      | 2FA Implementation                            | Hard          | Node.js/TOTP       | ✅Done  |
-| 24  | 🔐 Authentication      | Role-Based Access Control                     | Medium        | Node.js            | ☐ Not Started  |
-| 25  | 🔐 Authentication      | Admin Dashboard API                           | Medium        | Node.js            | ☐ Not Started  |
+| 24  | 🔐 Authentication      | Role-Based Access Control                     | Medium        | Node.js            | ✅Done   |
+| 25  | 🔐 Authentication      | Admin Dashboard API                           | Medium        | Node.js            | ✅Done  |
 | 26  | 🔐 Authentication      | User Activity Logging                         | Medium        | Node.js            | ☐ Not Started  |
 | 27  | 🔐 Authentication      | Account Verification with OTP                 | Medium        | Node.js            | ☐ Not Started  |
 | 28  | 🔐 Authentication      | Social Login Integration                      | Hard          | Node.js/OAuth2     | ☐ Not Started  |
