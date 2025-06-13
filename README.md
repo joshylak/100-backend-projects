@@ -28,7 +28,7 @@
 | 23  | 🔐 Authentication      | 2FA Implementation                            | Hard          | Node.js/TOTP       | ✅Done  |
 | 24  | 🔐 Authentication      | Role-Based Access Control                     | Medium        | Node.js            | ✅Done   |
 | 25  | 🔐 Authentication      | Admin Dashboard API                           | Medium        | Node.js            | ✅Done  |
-| 26  | 🔐 Authentication      | User Activity Logging                         | Medium        | Node.js            | ☐ Not Started  |
+| 26  | 🔐 Authentication      | User Activity Logging                         | Medium        | Node.js            | ✅Done  |
 | 27  | 🔐 Authentication      | Account Verification with OTP                 | Medium        | Node.js            | ☐ Not Started  |
 | 28  | 🔐 Authentication      | Social Login Integration                      | Hard          | Node.js/OAuth2     | ☐ Not Started  |
 | 29  | 🔐 Authentication      | Multi-Tenant Auth System                      | Hard          | Node.js            | ☐ Not Started  |

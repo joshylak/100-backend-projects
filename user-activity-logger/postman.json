@@ -1,0 +1,64 @@
+{
+  "info": {
+    "name": "User Activity Logger API",
+    "_postman_id": "abcd1234-5678-90ef-ghij-klmnopqrstuv",
+    "description": "Postman collection to test the User Activity Logging API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Log Activity",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": \"user123\",\n  \"action\": \"LOGIN\",\n  \"metadata\": {\n    \"ip\": \"127.0.0.1\",\n    \"device\": \"Chrome on Windows\"\n  }\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/activities",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "activities"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Activities",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/activities",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "activities"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Activities by User",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/activities/user123",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "activities", "user123"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
