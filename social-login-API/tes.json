@@ -1,0 +1,70 @@
+{
+  "info": {
+    "_postman_id": "b612730a-fd6f-48e6-a469-6b0c92c2db25",
+    "name": "Social Login API - Google OAuth",
+    "description": "Test Google OAuth2 social login API using Node.js (no DB)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Start Google Login",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/auth/google",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["auth", "google"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Google OAuth Callback",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/auth/google/callback",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["auth", "google", "callback"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Profile Info",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/profile",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["profile"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Logout",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/logout",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["logout"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
