@@ -1,0 +1,46 @@
+{
+  "info": {
+    "_postman_id": "c7166c3d-d58c-4431-bdb0-83f54a3edbfa",
+    "name": "Rate Limiter API",
+    "description": "Postman collection for testing Rate Limiting API based on IP/User-ID.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Ping Test (Rate Limited)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-user-id",
+            "value": "user123",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/ping",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "ping"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Ping Test Without User ID (IP-based)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/ping",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "ping"]
+        }
+      },
+      "response": []
+    }
+  ]
+}

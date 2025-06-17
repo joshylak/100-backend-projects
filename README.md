@@ -32,7 +32,7 @@
 | 27  | 🔐 Authentication      | Account Verification with OTP                 | Medium        | Node.js            | ✅Done  |
 | 28  | 🔐 Authentication      | Social Login Integration                      | Hard          | Node.js/OAuth2     | ✅Done  |
 | 29  | 🔐 Authentication      | Multi-Tenant Auth System                      | Hard          | Node.js            | ✅Done  |
-| 30  | 🔐 Authentication      | Rate Limiting per User/IP                     | Medium        | Node.js            | ☐ Not Started  |
+| 30  | 🔐 Authentication      | Rate Limiting per User/IP                     | Medium        | Node.js            | ✅Done  |
 | 31  | 🔐 Authentication      | Account Deletion Endpoint                     | Easy          | Node.js            | ☐ Not Started  |
 | 32  | 🔐 Authentication      | Single Sign-On (SSO) Stub                     | Hard          | Node.js            | ☐ Not Started  |
 | 33  | 🔐 Authentication      | Auth Middleware Package (npm/pip)             | Hard          | Node.js/npm        | ☐ Not Started  |
