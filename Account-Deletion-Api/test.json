@@ -1,0 +1,37 @@
+{
+  "info": {
+    "_postman_id": "b4c76193-a2a7-47b0-bab7-2f93c7f4b7d1",
+    "name": "Account Deletion API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Delete Account",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"user1@example.com\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/delete-account",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "delete-account"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
