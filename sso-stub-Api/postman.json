@@ -1,0 +1,58 @@
+{
+  "info": {
+    "_postman_id": "6d54cb3b-c1d7-443c-89f7-7c4cbf405fd1",
+    "name": "SSO Stub API",
+    "description": "Test SSO login and callback simulation using Node.js",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "🔐 SSO Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"user@example.com\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:4000/sso/login",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["sso", "login"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "🔄 Client Callback (Receive Token)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"token\": \"<paste-token-here>\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/client/callback",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["client", "callback"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
