@@ -1,0 +1,115 @@
+{
+"info": {
+"name": "Auth Middleware Test - Local Server",
+"_postman_id": "12345678-4321-1234-9876-abcdef123456",
+"description": "Tests JWT auth middleware using local Express test server",
+"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+},
+"item": [
+{
+"name": "Login - Generate JWT Token",
+"request": {
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"username\": \"john_doe\"\n}"
+},
+"url": {
+"raw": "http://localhost:3000/login",
+"protocol": "http",
+"host": ["localhost"],
+"port": "3000",
+"path": ["login"]
+}
+},
+"event": [
+{
+"listen": "test",
+"script": {
+"exec": [
+"pm.test(\"Token received\", function () {",
+"    var jsonData = pm.response.json();",
+"    pm.expect(jsonData).to.have.property(\"token\");",
+"    pm.collectionVariables.set(\"jwt_token\", jsonData.token);",
+"});"
+],
+"type": "text/javascript"
+}
+}
+],
+"response": []
+},
+{
+"name": "Protected Route - With Token",
+"request": {
+"method": "GET",
+"header": [
+{
+"key": "Authorization",
+"value": "Bearer {{jwt_token}}"
+}
+],
+"url": {
+"raw": "http://localhost:3000/protected",
+"protocol": "http",
+"host": ["localhost"],
+"port": "3000",
+"path": ["protected"]
+}
+},
+"event": [
+{
+"listen": "test",
+"script": {
+"exec": [
+"pm.test(\"Authorized access\", function () {",
+"    pm.response.to.have.status(200);",
+"    const res = pm.response.json();",
+"    pm.expect(res).to.have.property(\"message\", \"Welcome!\");",
+"    pm.expect(res).to.have.property(\"user\");",
+"});"
+],
+"type": "text/javascript"
+}
+}
+],
+"response": []
+},
+{
+"name": "Protected Route - Without Token",
+"request": {
+"method": "GET",
+"header": [],
+"url": {
+"raw": "http://localhost:3000/protected",
+"protocol": "http",
+"host": ["localhost"],
+"port": "3000",
+"path": ["protected"]
+}
+},
+"event": [
+{
+"listen": "test",
+"script": {
+"exec": [
+"pm.test(\"Unauthorized without token\", function () {",
+"    pm.response.to.have.status(401);",
+"    const res = pm.response.json();",
+"    pm.expect(res).to.have.property(\"message\");",
+"});"
+],
+"type": "text/javascript"
+}
+}
+],
+"response": []
+}
+]
+}
