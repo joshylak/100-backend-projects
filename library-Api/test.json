@@ -1,0 +1,103 @@
+{
+  "info": {
+    "_postman_id": "9fd5d8bb-3e8f-4f2e-b76c-1a92beaf03b0",
+    "name": "Library API",
+    "description": "Postman test collection for managing books and authors",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "📘 Create Author",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Chinua Achebe\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:4000/authors",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["authors"]
+        }
+      }
+    },
+    {
+      "name": "📚 Get All Authors",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:4000/authors",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["authors"]
+        }
+      }
+    },
+    {
+      "name": "📖 Create Book",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Things Fall Apart\",\n  \"authorId\": \"<paste-author-id-here>\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:4000/books",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["books"]
+        }
+      }
+    },
+    {
+      "name": "📚 Get All Books",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:4000/books",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["books"]
+        }
+      }
+    },
+    {
+      "name": "📖 Update Book",
+      "request": {
+        "method": "PUT",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+        "mode": "raw",
+        "raw": "{\n  \"title\": \"Arrow of God\",\n  \"authorId\": \"<paste-author-id-here>\"\n}"
+        },
+        "url": {
+        "raw": "http://localhost:4000/books/<book-id>",
+        "protocol": "http",
+        "host": ["localhost"],
+        "port": "4000",
+        "path": ["books", "<book-id>"]
+        }
+    }
+    },
+    {
+    "name": "🗑️ Delete Book",
+    "request": {
+        "method": "DELETE",
+        "url": {
+        "raw": "http://localhost:4000/books/<book-id>",
+        "protocol": "http",
+        "host": ["localhost"],
+        "port": "4000",
+        "path": ["books", "<book-id>"]
+        }
+    }
+    }
+]
+}
