@@ -36,8 +36,8 @@
 | 31  | 🔐 Authentication      | Account Deletion Endpoint                     | Easy          | Node.js            | ✅Done  |
 | 32  | 🔐 Authentication      | Single Sign-On (SSO) Stub                     | Hard          | Node.js            | ✅Done  |
 | 33  | 🔐 Authentication      | Auth Middleware Package (npm/pip)             | Hard          | Node.js/npm        | ✅Done  |
-| 34  | 📦 CRUD                | Library API (Books, Authors)                  | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
-| 35  | 📦 CRUD                | Movie/TV Show DB                              | Medium        | Node.js/MongoDB    | ☐ Not Started  |
+| 34  | 📦 CRUD                | Library API (Books, Authors)                  | Medium        | Node.js/PostgreSQL | ✅Done  |
+| 35  | 📦 CRUD                | Movie/TV Show DB                              | Medium        | Node.js/MongoDB    | ✅Done  |
 | 36  | 📦 CRUD                | Fitness Tracker (workouts, calories)          | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
 | 37  | 📦 CRUD                | Habit Tracker API                             | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
 | 38  | 📦 CRUD                | Recipe Manager                                | Medium        | Node.js/PostgreSQL | ☐ Not Started  |

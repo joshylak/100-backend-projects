@@ -1,0 +1,167 @@
+    {
+    "info": {
+        "_postman_id": "b1c4fbbd-719f-4f22-a100-123456789abc",
+        "name": "Movie-TV API Collection",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+        "name": "Get All Movies",
+        "request": {
+            "method": "GET",
+            "url": {
+            "raw": "http://localhost:3000/api/movies",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "movies"]
+            }
+        }
+        },
+        {
+        "name": "Get Movie by ID",
+        "request": {
+            "method": "GET",
+            "url": {
+            "raw": "http://localhost:3000/api/movies/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "movies", "1"]
+            }
+        }
+        },
+        {
+        "name": "Create Movie",
+        "request": {
+            "method": "POST",
+            "header": [
+            { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"title\": \"Inception\",\n  \"genre\": \"Sci-Fi\",\n  \"year\": 2010\n}"
+            },
+            "url": {
+            "raw": "http://localhost:3000/api/movies",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "movies"]
+            }
+        }
+        },
+        {
+        "name": "Update Movie",
+        "request": {
+            "method": "PUT",
+            "header": [
+            { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"title\": \"Inception Updated\",\n  \"genre\": \"Thriller\"\n}"
+            },
+            "url": {
+            "raw": "http://localhost:3000/api/movies/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "movies", "1"]
+            }
+        }
+        },
+        {
+        "name": "Delete Movie",
+        "request": {
+            "method": "DELETE",
+            "url": {
+            "raw": "http://localhost:3000/api/movies/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "movies", "1"]
+            }
+        }
+        },
+        {
+        "name": "Get All Shows",
+        "request": {
+            "method": "GET",
+            "url": {
+            "raw": "http://localhost:3000/api/shows",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "shows"]
+            }
+        }
+        },
+        {
+        "name": "Get Show by ID",
+        "request": {
+            "method": "GET",
+            "url": {
+            "raw": "http://localhost:3000/api/shows/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "shows", "1"]
+            }
+        }
+        },
+        {
+        "name": "Create Show",
+        "request": {
+            "method": "POST",
+            "header": [
+            { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"title\": \"Breaking Bad\",\n  \"genre\": \"Drama\",\n  \"seasons\": 5\n}"
+            },
+            "url": {
+            "raw": "http://localhost:3000/api/shows",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "shows"]
+            }
+        }
+        },
+        {
+        "name": "Update Show",
+        "request": {
+            "method": "PUT",
+            "header": [
+            { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"title\": \"Breaking Bad Updated\",\n  \"seasons\": 6\n}"
+            },
+            "url": {
+            "raw": "http://localhost:3000/api/shows/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "shows", "1"]
+            }
+        }
+        },
+        {
+        "name": "Delete Show",
+        "request": {
+            "method": "DELETE",
+            "url": {
+            "raw": "http://localhost:3000/api/shows/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "shows", "1"]
+            }
+        }
+        }
+    ]
+    }
