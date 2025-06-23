@@ -38,7 +38,7 @@
 | 33  | 🔐 Authentication      | Auth Middleware Package (npm/pip)             | Hard          | Node.js/npm        | ✅Done  |
 | 34  | 📦 CRUD                | Library API (Books, Authors)                  | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 35  | 📦 CRUD                | Movie/TV Show DB                              | Medium        | Node.js/MongoDB    | ✅Done  |
-| 36  | 📦 CRUD                | Fitness Tracker (workouts, calories)          | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
+| 36  | 📦 CRUD                | Fitness Tracker (workouts, calories)          | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 37  | 📦 CRUD                | Habit Tracker API                             | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
 | 38  | 📦 CRUD                | Recipe Manager                                | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
 | 39  | 📦 CRUD                | Inventory System                              | Medium        | Node.js/PostgreSQL | ☐ Not Started  |

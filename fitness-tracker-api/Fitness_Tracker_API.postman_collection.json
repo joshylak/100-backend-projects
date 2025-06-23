@@ -1,0 +1,235 @@
+{
+  "info": {
+    "_postman_id": "f2078a56-5e47-4e8a-95c5-626dee32a07f",
+    "name": "Fitness Tracker API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Workouts",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/api/workouts",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "workouts"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Workout by ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/api/workouts/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "workouts",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create Workout",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"type\": \"Cycling\",\n  \"duration\": 45,\n  \"caloriesBurned\": 400,\n  \"date\": \"2025-06-22\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/workouts",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "workouts"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Update Workout",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"duration\": 50\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/workouts/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "workouts",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delete Workout",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:3000/api/workouts/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "workouts",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get All Calories",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/api/calories",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "calories"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Calorie by ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/api/calories/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "calories",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create Calorie Entry",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"food\": \"Apple\",\n  \"amount\": 95,\n  \"date\": \"2025-06-22\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/calories",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "calories"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Update Calorie Entry",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"amount\": 100\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/calories/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "calories",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delete Calorie Entry",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:3000/api/calories/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "calories",
+            "1"
+          ]
+        }
+      }
+    }
+  ]
+}
