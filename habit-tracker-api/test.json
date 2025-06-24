@@ -1,0 +1,107 @@
+    {
+    "info": {
+        "name": "Habit Tracker API",
+        "_postman_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "description": "Test for Habit Tracker API (No DB)",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+        "name": "Create User",
+        "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n    \"username\": \"john_doe\"\n}",
+            "options": {
+                "raw": {
+                "language": "json"
+                }
+            }
+            },
+            "url": {
+            "raw": "http://localhost:3000/api/users",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "users"]
+            }
+        }
+        },
+        {
+        "name": "Create Habit",
+        "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n    \"userId\": \"<PASTE_USER_ID>\",\n    \"title\": \"Exercise\"\n}",
+            "options": {
+                "raw": {
+                "language": "json"
+                }
+            }
+            },
+            "url": {
+            "raw": "http://localhost:3000/api/habits",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "habits"]
+            }
+        }
+        },
+        {
+        "name": "Mark Habit Completed",
+        "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n    \"date\": \"2025-06-24\"\n}",
+            "options": {
+                "raw": {
+                "language": "json"
+                }
+            }
+            },
+            "url": {
+            "raw": "http://localhost:3000/api/habits/<HABIT_ID>/complete",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "habits", "<HABIT_ID>", "complete"]
+            }
+        }
+        },
+        {
+        "name": "Get User Habits",
+        "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+            "raw": "http://localhost:3000/api/users/<USER_ID>/habits",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "users", "<USER_ID>", "habits"]
+            }
+        }
+        },
+        {
+        "name": "Get Habit Logs",
+        "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+            "raw": "http://localhost:3000/api/habits/<HABIT_ID>/logs",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "habits", "<HABIT_ID>", "logs"]
+            }
+        }
+        }
+    ]
+    }
