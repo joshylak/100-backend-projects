@@ -40,7 +40,7 @@
 | 35  | 📦 CRUD                | Movie/TV Show DB                              | Medium        | Node.js/MongoDB    | ✅Done  |
 | 36  | 📦 CRUD                | Fitness Tracker (workouts, calories)          | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 37  | 📦 CRUD                | Habit Tracker API                             | Medium        | Node.js/PostgreSQL | ✅Done  |
-| 38  | 📦 CRUD                | Recipe Manager                                | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
+| 38  | 📦 CRUD                | Recipe Manager                                | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 39  | 📦 CRUD                | Inventory System                              | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
 | 40  | 📦 CRUD                | Music Playlist API                            | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
 | 41  | 📦 CRUD                | Book Lending System                           | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
