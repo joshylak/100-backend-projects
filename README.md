@@ -15,18 +15,18 @@
 | 10  | 🔰 Beginner            | Basic Blog API (posts only)                   | Easy          | Node.js            |  ✅ Done    |
 | 11  | 🔰 Beginner            | Mock E-commerce Products API                  | Easy          | Node.js            | ✅ Done   |
 | 12  | 🔰 Beginner            | IP Lookup Service                             | Easy          | Node.js            | ✅ Done    |
-| 13  | 🔰 Beginner            | Contact Form Email Sender (NodeMailer)        | Easy          | Node.js            |  ✅ Done   |
-| 14  | 🔰 Beginner            | BMI Calculator API                            | Easy          | Node.js            | ✅ Done   |
-| 15  | 🔰 Beginner            | Markdown to HTML Converter                    | Easy          | Node.js            |  ✅Done  |
-| 16  | 🔰 Beginner            | Simple URL Shortener (in-memory)              | Easy          | Node.js            | ✅Done   |
+| 13  | 🔰 Beginner            | Contact Form Email Sender (NodeMailer)        | Easy          | Node.js            |  ✅ Done|
+| 14  | 🔰 Beginner            | BMI Calculator API                            | Easy          | Node.js            | ✅ Done |
+| 15  | 🔰 Beginner            | Markdown to HTML Converter                    | Easy          | Node.js            |  ✅Done |
+| 16  | 🔰 Beginner            | Simple URL Shortener (in-memory)              | Easy          | Node.js            | ✅Done  |
 | 17  | 🔰 Beginner            | Local Storage with FileSystem (JSON DB)       | Easy          | Node.js            | ✅Done  |
 | 18  | 🔰 Beginner            | REST Countries API Clone                      | Easy          | Node.js            | ✅Done  |
 | 19  | 🔐 Authentication      | JWT Auth API                                  | Medium        | Node.js/JWT        | ✅Done  |
-| 20  | 🔐 Authentication      | Session-Based Auth                            | Medium        | Node.js/Express    | ✅Done   |
+| 20  | 🔐 Authentication      | Session-Based Auth                            | Medium        | Node.js/Express    | ✅Done  |
 | 21  | 🔐 Authentication      | OAuth Login (Google, GitHub)                  | Medium        | Node.js/OAuth2     | ✅Done  |
-| 22  | 🔐 Authentication      | Password Reset via Email                      | Medium        | Node.js/Nodemailer | ✅Done |
+| 22  | 🔐 Authentication      | Password Reset via Email                      | Medium        | Node.js/Nodemailer | ✅Done  |
 | 23  | 🔐 Authentication      | 2FA Implementation                            | Hard          | Node.js/TOTP       | ✅Done  |
-| 24  | 🔐 Authentication      | Role-Based Access Control                     | Medium        | Node.js            | ✅Done   |
+| 24  | 🔐 Authentication      | Role-Based Access Control                     | Medium        | Node.js            | ✅Done  |
 | 25  | 🔐 Authentication      | Admin Dashboard API                           | Medium        | Node.js            | ✅Done  |
 | 26  | 🔐 Authentication      | User Activity Logging                         | Medium        | Node.js            | ✅Done  |
 | 27  | 🔐 Authentication      | Account Verification with OTP                 | Medium        | Node.js            | ✅Done  |
@@ -41,7 +41,7 @@
 | 36  | 📦 CRUD                | Fitness Tracker (workouts, calories)          | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 37  | 📦 CRUD                | Habit Tracker API                             | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 38  | 📦 CRUD                | Recipe Manager                                | Medium        | Node.js/PostgreSQL | ✅Done  |
-| 39  | 📦 CRUD                | Inventory System                              | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
+| 39  | 📦 CRUD                | Inventory System                              | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 40  | 📦 CRUD                | Music Playlist API                            | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
 | 41  | 📦 CRUD                | Book Lending System                           | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
 | 42  | 📦 CRUD                | Blog + Comments System                        | Medium        | Node.js/PostgreSQL | ☐ Not Started  |

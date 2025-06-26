@@ -1,0 +1,120 @@
+    {
+    "info": {
+        "_postman_id": "e22c7c2c-4a87-44b2-9d0f-447d9bd43233",
+        "name": "Inventory System API (No DB)",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+        "name": "Add Product",
+        "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"name\": \"Laptop\",\n  \"description\": \"Dell XPS 13\",\n  \"quantity\": 10,\n  \"price\": 1200\n}"
+            },
+            "url": {
+            "raw": "http://localhost:3000/api/inventory",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "inventory"]
+            }
+        }
+        },
+        {
+        "name": "Get All Products",
+        "request": {
+            "method": "GET",
+            "url": {
+            "raw": "http://localhost:3000/api/inventory",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "inventory"]
+            }
+        }
+        },
+        {
+        "name": "Get Product by ID",
+        "request": {
+            "method": "GET",
+            "url": {
+            "raw": "http://localhost:3000/api/inventory/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "inventory", "1"]
+            }
+        }
+        },
+        {
+        "name": "Update Product",
+        "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"name\": \"Updated Laptop\",\n  \"price\": 1500\n}"
+            },
+            "url": {
+            "raw": "http://localhost:3000/api/inventory/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "inventory", "1"]
+            }
+        }
+        },
+        {
+        "name": "Adjust Stock (Increase)",
+        "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"adjustment\": 5\n}"
+            },
+            "url": {
+            "raw": "http://localhost:3000/api/inventory/1/stock",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "inventory", "1", "stock"]
+            }
+        }
+        },
+        {
+        "name": "Adjust Stock (Decrease)",
+        "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"adjustment\": -3\n}"
+            },
+            "url": {
+            "raw": "http://localhost:3000/api/inventory/1/stock",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "inventory", "1", "stock"]
+            }
+        }
+        },
+        {
+        "name": "Delete Product",
+        "request": {
+            "method": "DELETE",
+            "url": {
+            "raw": "http://localhost:3000/api/inventory/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "inventory", "1"]
+            }
+        }
+        }
+    ]
+    }
