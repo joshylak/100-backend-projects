@@ -1,0 +1,113 @@
+    {
+    "info": {
+        "_postman_id": "d27f7682-28cb-4dd8-880e-1db7850d3f5c",
+        "name": "Music Playlist API",
+        "description": "Test collection for Music Playlist API using Supabase + Knex + Objection",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+        "name": "Create User",
+        "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"username\": \"josh_dev\"\n}"
+            },
+            "url": { "raw": "http://localhost:3000/api/users", "host": ["http://localhost:3000"], "path": ["api", "users"] }
+        }
+        },
+        {
+        "name": "Get All Users",
+        "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:3000/api/users", "host": ["http://localhost:3000"], "path": ["api", "users"] }
+        }
+        },
+        {
+        "name": "Get User with Playlists",
+        "request": {
+            "method": "GET",
+            "url": {
+            "raw": "http://localhost:3000/api/users/1",
+            "host": ["http://localhost:3000"],
+            "path": ["api", "users", "1"]
+            }
+        }
+        },
+        {
+        "name": "Create Song",
+        "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"title\": \"Eyo\",\n  \"artist\": \"Wizkid\"\n}"
+            },
+            "url": { "raw": "http://localhost:3000/api/songs", "host": ["http://localhost:3000"], "path": ["api", "songs"] }
+        }
+        },
+        {
+        "name": "Get All Songs",
+        "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:3000/api/songs", "host": ["http://localhost:3000"], "path": ["api", "songs"] }
+        }
+        },
+        {
+        "name": "Get One Song",
+        "request": {
+            "method": "GET",
+            "url": {
+            "raw": "http://localhost:3000/api/songs/1",
+            "host": ["http://localhost:3000"],
+            "path": ["api", "songs", "1"]
+            }
+        }
+        },
+        {
+        "name": "Create Playlist",
+        "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"name\": \"Chill Vibes\",\n  \"user_id\": 1\n}"
+            },
+            "url": {
+            "raw": "http://localhost:3000/api/playlists",
+            "host": ["http://localhost:3000"],
+            "path": ["api", "playlists"]
+            }
+        }
+        },
+        {
+        "name": "Add Song to Playlist",
+        "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"song_id\": 1\n}"
+            },
+            "url": {
+            "raw": "http://localhost:3000/api/playlists/1/songs",
+            "host": ["http://localhost:3000"],
+            "path": ["api", "playlists", "1", "songs"]
+            }
+        }
+        },
+        {
+        "name": "Get Playlist with Songs",
+        "request": {
+            "method": "GET",
+            "url": {
+            "raw": "http://localhost:3000/api/playlists/1",
+            "host": ["http://localhost:3000"],
+            "path": ["api", "playlists", "1"]
+            }
+        }
+        }
+    ]
+    }
