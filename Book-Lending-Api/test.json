@@ -1,0 +1,118 @@
+    {
+    "info": {
+        "_postman_id": "a7f3d8b4-1b11-4c92-8b7b-bb0dbe81b123",
+        "name": "Book Lending System (No DB)",
+        "description": "Test the Book Lending System API (no database)",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+        "name": "Create User",
+        "request": {
+            "method": "POST",
+            "header": [
+            { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"name\": \"John Doe\"\n}"
+            },
+            "url": {
+            "raw": "http://localhost:3000/users",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["users"]
+            }
+        }
+        },
+        {
+        "name": "Create Book",
+        "request": {
+            "method": "POST",
+            "header": [
+            { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"title\": \"The Hobbit\",\n  \"author\": \"J.R.R. Tolkien\"\n}"
+            },
+            "url": {
+            "raw": "http://localhost:3000/books",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["books"]
+            }
+        }
+        },
+        {
+        "name": "List All Users",
+        "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+            "raw": "http://localhost:3000/users",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["users"]
+            }
+        }
+        },
+        {
+        "name": "List All Books",
+        "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+            "raw": "http://localhost:3000/books",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["books"]
+            }
+        }
+        },
+        {
+        "name": "Borrow Book",
+        "request": {
+            "method": "POST",
+            "header": [
+            { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"userId\": \"<PUT-USER-ID-HERE>\",\n  \"bookId\": \"<PUT-BOOK-ID-HERE>\"\n}"
+            },
+            "url": {
+            "raw": "http://localhost:3000/borrow",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["borrow"]
+            }
+        }
+        },
+        {
+        "name": "Return Book",
+        "request": {
+            "method": "POST",
+            "header": [
+            { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"userId\": \"<PUT-USER-ID-HERE>\"\n}"
+            },
+            "url": {
+            "raw": "http://localhost:3000/return",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["return"]
+            }
+        }
+        }
+    ]
+    }

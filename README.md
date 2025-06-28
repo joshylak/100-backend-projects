@@ -43,7 +43,7 @@
 | 38  | 📦 CRUD                | Recipe Manager                                | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 39  | 📦 CRUD                | Inventory System                              | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 40  | 📦 CRUD                | Music Playlist API                            | Medium        | Node.js/PostgreSQL | ✅Done  |
-| 41  | 📦 CRUD                | Book Lending System                           | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
+| 41  | 📦 CRUD                | Book Lending System                           | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 42  | 📦 CRUD                | Blog + Comments System                        | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
 | 43  | 📦 CRUD                | Bookmark Manager                              | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
 | 44  | 📦 CRUD                | Resume Builder API                            | Medium        | Node.js/PostgreSQL | ☐ Not Started  |

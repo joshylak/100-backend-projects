@@ -1,0 +1,21 @@
+{
+  "name": "book-lending-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.0.0",
+    "express": "^5.1.0",
+    "knex": "^3.1.0",
+    "objection": "^3.1.5",
+    "pg": "^8.16.3",
+    "uuid": "^11.1.0"
+  }
+}
