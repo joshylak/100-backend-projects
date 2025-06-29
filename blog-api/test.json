@@ -1,0 +1,115 @@
+{
+  "info": {
+    "_postman_id": "bfc6e9f6-3d7f-4f77-a1c3-123456789abc",
+    "name": "Blog + Comments API (No DB)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Blog",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"My First Blog\",\n  \"content\": \"This is the content of my first blog.\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/blogs",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "blogs"]
+        }
+      }
+    },
+    {
+      "name": "Get All Blogs",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5000/api/blogs",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "blogs"]
+        }
+      }
+    },
+    {
+      "name": "Get Blog by ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5000/api/blogs/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "blogs", "1"]
+        }
+      }
+    },
+    {
+      "name": "Update Blog by ID",
+      "request": {
+        "method": "PUT",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Updated Blog Title\",\n  \"content\": \"Updated content.\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/blogs/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "blogs", "1"]
+        }
+      }
+    },
+    {
+      "name": "Delete Blog by ID",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:5000/api/blogs/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "blogs", "1"]
+        }
+      }
+    },
+    {
+      "name": "Add Comment to Blog",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"blogId\": 1,\n  \"content\": \"This is a comment.\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/comments",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "comments"]
+        }
+      }
+    },
+    {
+      "name": "Get Comments by Blog ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5000/api/comments/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "comments", "1"]
+        }
+      }
+    }
+  ]
+}
