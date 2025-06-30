@@ -44,8 +44,8 @@
 | 39  | 📦 CRUD                | Inventory System                              | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 40  | 📦 CRUD                | Music Playlist API                            | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 41  | 📦 CRUD                | Book Lending System                           | Medium        | Node.js/PostgreSQL | ✅Done  |
-| 42  | 📦 CRUD                | Blog + Comments System                        | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
-| 43  | 📦 CRUD                | Bookmark Manager                              | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
+| 42  | 📦 CRUD                | Blog + Comments System                        | Medium        | Node.js/PostgreSQL | ✅Done  |
+| 43  | 📦 CRUD                | Bookmark Manager                              | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 44  | 📦 CRUD                | Resume Builder API                            | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
 | 45  | 📦 CRUD                | Client-Project Tracker                        | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
 | 46  | 📦 CRUD                | Student Management System                     | Medium        | Node.js/PostgreSQL | ☐ Not Started  |

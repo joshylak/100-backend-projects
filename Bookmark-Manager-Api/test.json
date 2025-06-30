@@ -1,0 +1,63 @@
+    {
+    "info": {
+        "_postman_id": "bd9c5434-ffda-48c0-b2fa-b0f661b0a310",
+        "name": "Bookmark Manager",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+        "name": "Get All Bookmarks",
+        "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+            "raw": "http://localhost:3000/bookmarks",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["bookmarks"]
+            }
+        },
+        "response": []
+        },
+        {
+        "name": "Add Bookmark",
+        "request": {
+            "method": "POST",
+            "header": [
+            {
+                "key": "Content-Type",
+                "value": "application/json"
+            }
+            ],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n    \"title\": \"OpenAI\",\n    \"url\": \"https://openai.com\"\n}"
+            },
+            "url": {
+            "raw": "http://localhost:3000/bookmarks",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["bookmarks"]
+            }
+        },
+        "response": []
+        },
+        {
+        "name": "Delete Bookmark by ID",
+        "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+            "raw": "http://localhost:3000/bookmarks/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["bookmarks", "1"]
+            }
+        },
+        "response": []
+        }
+    ]
+    }
