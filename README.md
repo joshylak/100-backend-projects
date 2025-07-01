@@ -46,7 +46,7 @@
 | 41  | 📦 CRUD                | Book Lending System                           | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 42  | 📦 CRUD                | Blog + Comments System                        | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 43  | 📦 CRUD                | Bookmark Manager                              | Medium        | Node.js/PostgreSQL | ✅Done  |
-| 44  | 📦 CRUD                | Resume Builder API                            | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
+| 44  | 📦 CRUD                | Resume Builder API                            | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 45  | 📦 CRUD                | Client-Project Tracker                        | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
 | 46  | 📦 CRUD                | Student Management System                     | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
 | 47  | 📦 CRUD                | Travel Bucket List API                        | Medium        | Node.js/PostgreSQL | ☐ Not Started  |

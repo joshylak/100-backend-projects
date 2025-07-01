@@ -1,0 +1,100 @@
+    {
+    "info": {
+        "_postman_id": "b1c3c7f8-1234-4c9c-bc2d-abcdef123456",
+        "name": "Resume Builder API",
+        "description": "Test all endpoints of the Resume Builder API (Node.js + .json db)",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+        "name": "Create Resume",
+        "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"john@example.com\",\n  \"phone\": \"123-456-7890\",\n  \"education\": [\"B.Sc. in CS\"],\n  \"experience\": [\n    { \"company\": \"Tech Co\", \"role\": \"Backend Dev\", \"duration\": \"2019 - 2022\" }\n  ],\n  \"skills\": [\"Node.js\", \"Express\", \"MongoDB\"]\n}"
+            },
+            "url": {
+            "raw": "http://localhost:3000/resumes",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["resumes"]
+            }
+        },
+        "response": []
+        },
+        {
+        "name": "Get All Resumes",
+        "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+            "raw": "http://localhost:3000/resumes",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["resumes"]
+            }
+        },
+        "response": []
+        },
+        {
+        "name": "Get Resume by ID",
+        "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+            "raw": "http://localhost:3000/resumes/{{resume_id}}",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["resumes", "{{resume_id}}"]
+            }
+        },
+        "response": []
+        },
+        {
+        "name": "Update Resume",
+        "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"phone\": \"999-888-7777\",\n  \"skills\": [\"Node.js\", \"Express\", \"PostgreSQL\"]\n}"
+            },
+            "url": {
+            "raw": "http://localhost:3000/resumes/{{resume_id}}",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["resumes", "{{resume_id}}"]
+            }
+        },
+        "response": []
+        },
+        {
+        "name": "Delete Resume",
+        "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+            "raw": "http://localhost:3000/resumes/{{resume_id}}",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["resumes", "{{resume_id}}"]
+            }
+        },
+        "response": []
+        }
+    ],
+    "event": [],
+    "variable": [
+        {
+        "key": "resume_id",
+        "value": ""
+        }
+    ]
+    }
