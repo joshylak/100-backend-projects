@@ -1,0 +1,212 @@
+{
+  "info": {
+    "name": "Client-Project Tracker API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Clients",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/clients",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "clients"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Add Client",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Client A\",\n  \"email\": \"clienta@example.com\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/clients",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "clients"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Update Client",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Client A Updated\",\n  \"email\": \"updated@example.com\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/clients/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "clients",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delete Client",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/clients/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "clients",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get All Projects",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/projects",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "projects"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Add Project",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"clientId\": \"client-id-here\",\n  \"title\": \"New Project\",\n  \"status\": \"In Progress\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/projects",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "projects"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Update Project",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Updated Project\",\n  \"status\": \"Completed\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/projects/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "projects",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delete Project",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/projects/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "projects",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Projects by Client",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/projects/client/:clientId",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "projects",
+            "client",
+            ":clientId"
+          ]
+        }
+      }
+    }
+  ]
+}
