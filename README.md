@@ -34,7 +34,7 @@
 | 29  | 🔐 Authentication      | Multi-Tenant Auth System                      | Hard          | Node.js            | ✅Done  |
 | 30  | 🔐 Authentication      | Rate Limiting per User/IP                     | Medium        | Node.js            | ✅Done  |
 | 31  | 🔐 Authentication      | Account Deletion Endpoint                     | Easy          | Node.js            | ✅Done  |
-| 32  | 🔐 Authentication      | Single Sign-On (SSO) Stub                     | Hard          | Node.js            | ✅Done  |npm i
+| 32  | 🔐 Authentication      | Single Sign-On (SSO) Stub                     | Hard          | Node.js            | ✅Done  |
 | 33  | 🔐 Authentication      | Auth Middleware Package (npm/pip)             | Hard          | Node.js/npm        | ✅Done  |
 | 34  | 📦 CRUD                | Library API (Books, Authors)                  | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 35  | 📦 CRUD                | Movie/TV Show DB                              | Medium        | Node.js/MongoDB    | ✅Done  |
@@ -48,7 +48,7 @@
 | 43  | 📦 CRUD                | Bookmark Manager                              | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 44  | 📦 CRUD                | Resume Builder API                            | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 45  | 📦 CRUD                | Client-Project Tracker                        | Medium        | Node.js/PostgreSQL | ✅Done  |
-| 46  | 📦 CRUD                | Student Management System                     | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
+| 46  | 📦 CRUD                | Student Management System                     | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 47  | 📦 CRUD                | Travel Bucket List API                        | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
 | 48  | 📦 CRUD                | Learning Path Tracker                         | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
 | 49  | 🧠 Intermediate         | Chat App Backend (Socket.IO / WebSocket)      | Medium        | Node.js/Socket.IO  | ☐ Not Started  |
