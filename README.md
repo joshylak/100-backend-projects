@@ -49,7 +49,7 @@
 | 44  | 📦 CRUD                | Resume Builder API                            | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 45  | 📦 CRUD                | Client-Project Tracker                        | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 46  | 📦 CRUD                | Student Management System                     | Medium        | Node.js/PostgreSQL | ✅Done  |
-| 47  | 📦 CRUD                | Travel Bucket List API                        | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
+| 47  | 📦 CRUD                | Travel Bucket List API                        | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 48  | 📦 CRUD                | Learning Path Tracker                         | Medium        | Node.js/PostgreSQL | ☐ Not Started  |
 | 49  | 🧠 Intermediate         | Chat App Backend (Socket.IO / WebSocket)      | Medium        | Node.js/Socket.IO  | ☐ Not Started  |
 | 50  | 🧠 Intermediate         | Quiz App API                                  | Medium        | Node.js            | ☐ Not Started  |

@@ -1,0 +1,126 @@
+{
+  "info": {
+    "name": "Travel Bucket List API",
+    "_postman_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "description": "Test collection for Travel Bucket List API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Destinations",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/destinations",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "destinations"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Destination by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/destinations/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "destinations",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Add Destination",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Machu Picchu\",\n  \"country\": \"Peru\",\n  \"priority\": \"High\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/destinations",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "destinations"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Update Destination",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"priority\": \"Medium\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/destinations/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "destinations",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delete Destination",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/destinations/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "destinations",
+            ":id"
+          ]
+        }
+      }
+    }
+  ]
+}
