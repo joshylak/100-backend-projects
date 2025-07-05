@@ -1,0 +1,28 @@
+{
+  "paths": [
+    {
+      "id": "be0f3af8-edca-454d-8ec0-7ad6596c6471",
+      "title": "Backend Development",
+      "description": "Learn Backend  development",
+      "topics": []
+    },
+    {
+      "id": "2e546e82-994b-4a53-9376-cd4f222ca80a",
+      "title": "Frontend Development",
+      "description": "Learn Frontend  development",
+      "topics": []
+    },
+    {
+      "id": "26208b89-5cbb-406b-873b-3dee21a4bbab",
+      "title": "Cyber Security",
+      "description": "Learn Cyber Security ",
+      "topics": []
+    },
+    {
+      "id": "e393dacf-186b-460b-bddc-5df78a96b5d4",
+      "title": "Model Testing",
+      "description": "Learn Model Testing ",
+      "topics": []
+    }
+  ]
+}

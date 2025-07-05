@@ -1,0 +1,15 @@
+{
+  "name": "learning-path-tracker",
+  "version": "1.0.0",
+  "description": "A simple learning path tracker using Node.js and JSON DB",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "fs-extra": "^11.2.0",
+    "uuid": "^9.0.1"
+  }
+}
