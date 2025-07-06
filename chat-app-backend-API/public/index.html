@@ -1,0 +1,68 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Chat App</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        #messages { border: 1px solid #ccc; height: 300px; overflow-y: scroll; margin-bottom: 10px; padding: 10px; }
+        input, button { padding: 5px; margin: 5px; }
+    </style>
+    </head>
+    <body>
+    <h1>Socket.IO Chat App</h1>
+
+    <div>
+        <input id="username" placeholder="Username" />
+        <input id="room" placeholder="Room name" />
+        <button onclick="joinRoom()">Join Room</button>
+    </div>
+
+    <div id="messages"></div>
+
+    <input id="messageInput" placeholder="Type a message..." />
+    <button onclick="sendMessage()">Send</button>
+
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script>
+        const socket = io("http://localhost:5000"); // change if using different port or domain
+
+        let currentRoom = "";
+        let username = "";
+
+        function joinRoom() {
+        username = document.getElementById("username").value;
+        const room = document.getElementById("room").value;
+        if (!username || !room) return alert("Enter both username and room");
+        currentRoom = room;
+        socket.emit("joinRoom", room);
+        addMessage(`You joined room: ${room}`);
+        }
+
+        function sendMessage() {
+        const message = document.getElementById("messageInput").value;
+        if (!message || !currentRoom) return;
+        socket.emit("sendMessage", {
+            room: currentRoom,
+            username,
+            message
+        });
+        document.getElementById("messageInput").value = "";
+        }
+
+        function addMessage(msg) {
+        const messages = document.getElementById("messages");
+        messages.innerHTML += `<div>${msg}</div>`;
+        messages.scrollTop = messages.scrollHeight;
+        }
+
+        socket.on("receiveMessage", (data) => {
+        addMessage(`${data.username} [${data.time}]: ${data.message}`);
+        });
+
+        socket.on("userJoined", (msg) => {
+        addMessage(`<em>${msg}</em>`);
+        });
+    </script>
+    </body>
+    </html>

@@ -51,7 +51,7 @@
 | 46  | 📦 CRUD                | Student Management System                     | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 47  | 📦 CRUD                | Travel Bucket List API                        | Medium        | Node.js/PostgreSQL | ✅Done  |
 | 48  | 📦 CRUD                | Learning Path Tracker                         | Medium        | Node.js/PostgreSQL | ✅Done  |
-| 49  | 🧠 Intermediate         | Chat App Backend (Socket.IO / WebSocket)      | Medium        | Node.js/Socket.IO  | ☐ Not Started  |
+| 49  | 🧠 Intermediate         | Chat App Backend (Socket.IO / WebSocket)      | Medium        | Node.js/Socket.IO  | ✅Done  |
 | 50  | 🧠 Intermediate         | Quiz App API                                  | Medium        | Node.js            | ☐ Not Started  |
 | 51  | 🧠 Intermediate         | Live Polling API                              | Medium        | Node.js            | ☐ Not Started  |
 | 52  | 🧠 Intermediate         | Expense Tracker                               | Medium        | Node.js            | ☐ Not Started  |

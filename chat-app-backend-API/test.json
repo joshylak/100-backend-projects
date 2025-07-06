@@ -1,0 +1,25 @@
+    {
+    "info": {
+        "_postman_id": "b1a6c982-d90d-44cb-b377-e01eeb104a77",
+        "name": "Chat App Backend",
+        "description": "Simple test collection for HTTP routes of the chat app backend",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+        "name": "GET /",
+        "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+            "raw": "http://localhost:5000/",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5000",
+            "path": [""]
+            }
+        },
+        "response": []
+        }
+    ]
+    }
