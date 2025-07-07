@@ -1,0 +1,58 @@
+[
+  {
+    "id": "3d78e898-d836-4664-9ad1-b2dbea365fca",
+    "title": "JavaScript Fundamentals",
+    "questions": [
+      {
+        "question": "What is the output of 1 + '2' + 3?",
+        "options": [
+          "6",
+          "33",
+          "123",
+          "15"
+        ],
+        "answer": "123"
+      },
+      {
+        "question": "Which keyword is used to declare a constant in JavaScript?",
+        "options": [
+          "let",
+          "var",
+          "const",
+          "define"
+        ],
+        "answer": "const"
+      },
+      {
+        "question": "What will `typeof null` return in JavaScript?",
+        "options": [
+          "null",
+          "object",
+          "undefined",
+          "NaN"
+        ],
+        "answer": "object"
+      },
+      {
+        "question": "Which array method is used to remove the last item in an array?",
+        "options": [
+          "shift()",
+          "pop()",
+          "remove()",
+          "splice()"
+        ],
+        "answer": "pop()"
+      },
+      {
+        "question": "What does `===` compare in JavaScript?",
+        "options": [
+          "Value only",
+          "Type only",
+          "Both value and type",
+          "None"
+        ],
+        "answer": "Both value and type"
+      }
+    ]
+  }
+]

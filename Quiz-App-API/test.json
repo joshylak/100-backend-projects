@@ -1,0 +1,75 @@
+    {
+    "info": {
+        "_postman_id": "88e905c1-quiz-api-test",
+        "name": "Quiz App API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+        "name": "Create Quiz",
+        "request": {
+            "method": "POST",
+            "header": [
+            { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"title\": \"JavaScript Fundamentals\",\n  \"questions\": [\n    {\n      \"question\": \"What is the output of 1 + '2' + 3?\",\n      \"options\": [\"6\", \"33\", \"123\", \"15\"],\n      \"answer\": \"123\"\n    },\n    {\n      \"question\": \"Which keyword is used to declare a constant in JavaScript?\",\n      \"options\": [\"let\", \"var\", \"const\", \"define\"],\n      \"answer\": \"const\"\n    },\n    {\n      \"question\": \"What will `typeof null` return in JavaScript?\",\n      \"options\": [\"null\", \"object\", \"undefined\", \"NaN\"],\n      \"answer\": \"object\"\n    },\n    {\n      \"question\": \"Which array method is used to remove the last item in an array?\",\n      \"options\": [\"shift()\", \"pop()\", \"remove()\", \"splice()\"],\n      \"answer\": \"pop()\"\n    },\n    {\n      \"question\": \"What does `===` compare in JavaScript?\",\n      \"options\": [\"Value only\", \"Type only\", \"Both value and type\", \"None\"],\n      \"answer\": \"Both value and type\"\n    }\n  ]\n}"
+            },
+            "url": {
+            "raw": "http://localhost:3000/api/quizzes",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "quizzes"]
+            }
+        }
+        },
+        {
+        "name": "Get All Quizzes",
+        "request": {
+            "method": "GET",
+            "url": {
+            "raw": "http://localhost:3000/api/quizzes",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "quizzes"]
+            }
+        }
+        },
+        {
+        "name": "Get Quiz By ID",
+        "request": {
+            "method": "GET",
+            "url": {
+            "raw": "http://localhost:3000/api/quizzes/:id",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "quizzes", ":id"]
+            }
+        }
+        },
+        {
+        "name": "Submit Quiz Answers",
+        "request": {
+            "method": "POST",
+            "header": [
+            { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"answers\": [\"123\", \"const\", \"object\", \"pop()\", \"Both value and type\"]\n}"
+            },
+            "url": {
+            "raw": "http://localhost:3000/api/quizzes/:id/submit",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "quizzes", ":id", "submit"]
+            }
+        }
+        }
+    ]
+    }
