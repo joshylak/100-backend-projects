@@ -1,0 +1,94 @@
+    {
+    "info": {
+        "_postman_id": "a60a49c8-live-poll-api",
+        "name": "Live Poll API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+        "name": "Create Poll",
+        "request": {
+            "method": "POST",
+            "header": [
+            {
+                "key": "Content-Type",
+                "value": "application/json"
+            }
+            ],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"question\": \"What is your favorite programming language?\",\n  \"options\": [\"JavaScript\", \"Python\", \"Go\", \"Rust\"]\n}"
+            },
+            "url": {
+            "raw": "http://localhost:3000/api/polls",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "polls"]
+            }
+        }
+        },
+        {
+        "name": "Get All Polls",
+        "request": {
+            "method": "GET",
+            "url": {
+            "raw": "http://localhost:3000/api/polls",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "polls"]
+            }
+        }
+        },
+        {
+        "name": "Get Poll by ID",
+        "request": {
+            "method": "GET",
+            "url": {
+            "raw": "http://localhost:3000/api/polls/:id",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "polls", ":id"]
+            }
+        }
+        },
+        {
+        "name": "Vote on Poll",
+        "request": {
+            "method": "POST",
+            "header": [
+            {
+                "key": "Content-Type",
+                "value": "application/json"
+            }
+            ],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"option\": \"Python\"\n}"
+            },
+            "url": {
+            "raw": "http://localhost:3000/api/polls/:id/vote",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "polls", ":id", "vote"]
+            }
+        }
+        },
+        {
+        "name": "Get Poll Results",
+        "request": {
+            "method": "GET",
+            "url": {
+            "raw": "http://localhost:3000/api/polls/:id/results",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "polls", ":id", "results"]
+            }
+        }
+        }
+    ]
+    }

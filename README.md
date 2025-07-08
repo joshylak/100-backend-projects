@@ -2,58 +2,58 @@
 100 backend projects to be completed within 100 days
 
 | #   | Category               | Project Idea                                   | 🎯 Difficulty | 🧱 Stack           | ✅ Status       |
-|-----|-------------------------|-----------------------------------------------|---------------|--------------------|----------------|
-| 1   | 🔰 Beginner            | To-do List API                                | Easy          | Node.js            | ✅ Done  |
-| 2   | 🔰 Beginner            | Calculator API                                | Easy          | Node.js            | ✅ Done   |
-| 3   | 🔰 Beginner            | Weather Info API (mock)                       | Easy          | Node.js            | ✅ Done   |
-| 4   | 🔰 Beginner            | Quotes API                                    | Easy          | Node.js            | ✅ Done   |
-| 5   | 🔰 Beginner            | Currency Converter API (static)               | Easy          | Node.js            | ✅ Done  |
-| 6   | 🔰 Beginner            | User Registration/Login (no DB)               | Easy          | Node.js            | ✅ Done |
-| 7   | 🔰 Beginner            | Form Submission Handler                       | Easy          | Node.js            | ✅ Done  |
-| 8   | 🔰 Beginner            | Palindrome Checker API                        | Easy          | Node.js            | ✅ Done   |
-| 9   | 🔰 Beginner            | Notes API (in-memory CRUD)                    | Easy          | Node.js            | ✅ Done    |
-| 10  | 🔰 Beginner            | Basic Blog API (posts only)                   | Easy          | Node.js            |  ✅ Done    |
-| 11  | 🔰 Beginner            | Mock E-commerce Products API                  | Easy          | Node.js            | ✅ Done   |
-| 12  | 🔰 Beginner            | IP Lookup Service                             | Easy          | Node.js            | ✅ Done    |
-| 13  | 🔰 Beginner            | Contact Form Email Sender (NodeMailer)        | Easy          | Node.js            |  ✅ Done|
-| 14  | 🔰 Beginner            | BMI Calculator API                            | Easy          | Node.js            | ✅ Done |
-| 15  | 🔰 Beginner            | Markdown to HTML Converter                    | Easy          | Node.js            |  ✅Done |
-| 16  | 🔰 Beginner            | Simple URL Shortener (in-memory)              | Easy          | Node.js            | ✅Done  |
-| 17  | 🔰 Beginner            | Local Storage with FileSystem (JSON DB)       | Easy          | Node.js            | ✅Done  |
-| 18  | 🔰 Beginner            | REST Countries API Clone                      | Easy          | Node.js            | ✅Done  |
-| 19  | 🔐 Authentication      | JWT Auth API                                  | Medium        | Node.js/JWT        | ✅Done  |
-| 20  | 🔐 Authentication      | Session-Based Auth                            | Medium        | Node.js/Express    | ✅Done  |
-| 21  | 🔐 Authentication      | OAuth Login (Google, GitHub)                  | Medium        | Node.js/OAuth2     | ✅Done  |
-| 22  | 🔐 Authentication      | Password Reset via Email                      | Medium        | Node.js/Nodemailer | ✅Done  |
-| 23  | 🔐 Authentication      | 2FA Implementation                            | Hard          | Node.js/TOTP       | ✅Done  |
-| 24  | 🔐 Authentication      | Role-Based Access Control                     | Medium        | Node.js            | ✅Done  |
-| 25  | 🔐 Authentication      | Admin Dashboard API                           | Medium        | Node.js            | ✅Done  |
-| 26  | 🔐 Authentication      | User Activity Logging                         | Medium        | Node.js            | ✅Done  |
-| 27  | 🔐 Authentication      | Account Verification with OTP                 | Medium        | Node.js            | ✅Done  |
-| 28  | 🔐 Authentication      | Social Login Integration                      | Hard          | Node.js/OAuth2     | ✅Done  |
-| 29  | 🔐 Authentication      | Multi-Tenant Auth System                      | Hard          | Node.js            | ✅Done  |
-| 30  | 🔐 Authentication      | Rate Limiting per User/IP                     | Medium        | Node.js            | ✅Done  |
-| 31  | 🔐 Authentication      | Account Deletion Endpoint                     | Easy          | Node.js            | ✅Done  |
-| 32  | 🔐 Authentication      | Single Sign-On (SSO) Stub                     | Hard          | Node.js            | ✅Done  |
-| 33  | 🔐 Authentication      | Auth Middleware Package (npm/pip)             | Hard          | Node.js/npm        | ✅Done  |
-| 34  | 📦 CRUD                | Library API (Books, Authors)                  | Medium        | Node.js/PostgreSQL | ✅Done  |
-| 35  | 📦 CRUD                | Movie/TV Show DB                              | Medium        | Node.js/MongoDB    | ✅Done  |
-| 36  | 📦 CRUD                | Fitness Tracker (workouts, calories)          | Medium        | Node.js/PostgreSQL | ✅Done  |
-| 37  | 📦 CRUD                | Habit Tracker API                             | Medium        | Node.js/PostgreSQL | ✅Done  |
-| 38  | 📦 CRUD                | Recipe Manager                                | Medium        | Node.js/PostgreSQL | ✅Done  |
-| 39  | 📦 CRUD                | Inventory System                              | Medium        | Node.js/PostgreSQL | ✅Done  |
-| 40  | 📦 CRUD                | Music Playlist API                            | Medium        | Node.js/PostgreSQL | ✅Done  |
-| 41  | 📦 CRUD                | Book Lending System                           | Medium        | Node.js/PostgreSQL | ✅Done  |
-| 42  | 📦 CRUD                | Blog + Comments System                        | Medium        | Node.js/PostgreSQL | ✅Done  |
-| 43  | 📦 CRUD                | Bookmark Manager                              | Medium        | Node.js/PostgreSQL | ✅Done  |
-| 44  | 📦 CRUD                | Resume Builder API                            | Medium        | Node.js/PostgreSQL | ✅Done  |
-| 45  | 📦 CRUD                | Client-Project Tracker                        | Medium        | Node.js/PostgreSQL | ✅Done  |
-| 46  | 📦 CRUD                | Student Management System                     | Medium        | Node.js/PostgreSQL | ✅Done  |
-| 47  | 📦 CRUD                | Travel Bucket List API                        | Medium        | Node.js/PostgreSQL | ✅Done  |
-| 48  | 📦 CRUD                | Learning Path Tracker                         | Medium        | Node.js/PostgreSQL | ✅Done  |
+|-----|-------------------------|-----------------------------------------------|---------------|-------------------- |----------------|
+| 1   | 🔰 Beginner            | To-do List API                                | Easy          | Node.js             | ✅ Done |
+| 2   | 🔰 Beginner            | Calculator API                                | Easy          | Node.js             | ✅ Done |
+| 3   | 🔰 Beginner            | Weather Info API (mock)                       | Easy          | Node.js             | ✅ Done |
+| 4   | 🔰 Beginner            | Quotes API                                    | Easy          | Node.js             | ✅ Done |
+| 5   | 🔰 Beginner            | Currency Converter API (static)               | Easy          | Node.js             | ✅ Done |
+| 6   | 🔰 Beginner            | User Registration/Login (no DB)               | Easy          | Node.js             | ✅ Done |
+| 7   | 🔰 Beginner            | Form Submission Handler                       | Easy          | Node.js             | ✅ Done |
+| 8   | 🔰 Beginner            | Palindrome Checker API                        | Easy          | Node.js             | ✅ Done |
+| 9   | 🔰 Beginner            | Notes API (in-memory CRUD)                    | Easy          | Node.js             | ✅ Done |
+| 10  | 🔰 Beginner            | Basic Blog API (posts only)                   | Easy          | Node.js             |  ✅ Done|
+| 11  | 🔰 Beginner            | Mock E-commerce Products API                  | Easy          | Node.js             | ✅ Done |
+| 12  | 🔰 Beginner            | IP Lookup Service                             | Easy          | Node.js             | ✅ Done |
+| 13  | 🔰 Beginner            | Contact Form Email Sender (NodeMailer)        | Easy          | Node.js             |  ✅ Done|
+| 14  | 🔰 Beginner            | BMI Calculator API                            | Easy          | Node.js             | ✅Done  |
+| 15  | 🔰 Beginner            | Markdown to HTML Converter                    | Easy          | Node.js             |  ✅Done |
+| 16  | 🔰 Beginner            | Simple URL Shortener (in-memory)              | Easy          | Node.js             | ✅Done  |
+| 17  | 🔰 Beginner            | Local Storage with FileSystem (JSON DB)       | Easy          | Node.js             | ✅Done  |
+| 18  | 🔰 Beginner            | REST Countries API Clone                      | Easy          | Node.js             | ✅Done  |
+| 19  | 🔐 Authentication      | JWT Auth API                                  | Medium        | Node.js/JWT         | ✅Done  |
+| 20  | 🔐 Authentication      | Session-Based Auth                            | Medium        | Node.js/Express     | ✅Done  |
+| 21  | 🔐 Authentication      | OAuth Login (Google, GitHub)                  | Medium        | Node.js/OAuth2      | ✅Done  |
+| 22  | 🔐 Authentication      | Password Reset via Email                      | Medium        | Node.js/Nodemailer  | ✅Done  |
+| 23  | 🔐 Authentication      | 2FA Implementation                            | Hard          | Node.js/TOTP        | ✅Done  |
+| 24  | 🔐 Authentication      | Role-Based Access Control                     | Medium        | Node.js             | ✅Done  |
+| 25  | 🔐 Authentication      | Admin Dashboard API                           | Medium        | Node.js             | ✅Done  |
+| 26  | 🔐 Authentication      | User Activity Logging                         | Medium        | Node.js             | ✅Done  |
+| 27  | 🔐 Authentication      | Account Verification with OTP                 | Medium        | Node.js             | ✅Done  |
+| 28  | 🔐 Authentication      | Social Login Integration                      | Hard          | Node.js/OAuth2      | ✅Done  |
+| 29  | 🔐 Authentication      | Multi-Tenant Auth System                      | Hard          | Node.js             | ✅Done  |
+| 30  | 🔐 Authentication      | Rate Limiting per User/IP                     | Medium        | Node.js             | ✅Done  |
+| 31  | 🔐 Authentication      | Account Deletion Endpoint                     | Easy          | Node.js             | ✅Done  |
+| 32  | 🔐 Authentication      | Single Sign-On (SSO) Stub                     | Hard          | Node.js             | ✅Done  |
+| 33  | 🔐 Authentication      | Auth Middleware Package (npm/pip)             | Hard          | Node.js/npm         | ✅Done  |
+| 34  | 📦 CRUD                | Library API (Books, Authors)                  | Medium        | Node.js/PostgreSQL  | ✅Done  |
+| 35  | 📦 CRUD                | Movie/TV Show DB                              | Medium        | Node.js/MongoDB     | ✅Done  |
+| 36  | 📦 CRUD                | Fitness Tracker (workouts, calories)          | Medium        | Node.js/PostgreSQL  | ✅Done  |
+| 37  | 📦 CRUD                | Habit Tracker API                             | Medium        | Node.js/PostgreSQL  | ✅Done  |
+| 38  | 📦 CRUD                | Recipe Manager                                | Medium        | Node.js/PostgreSQL  | ✅Done  |
+| 39  | 📦 CRUD                | Inventory System                              | Medium        | Node.js/PostgreSQL  | ✅Done  |
+| 40  | 📦 CRUD                | Music Playlist API                            | Medium        | Node.js/PostgreSQL  | ✅Done  |
+| 41  | 📦 CRUD                | Book Lending System                           | Medium        | Node.js/PostgreSQL  | ✅Done  |
+| 42  | 📦 CRUD                | Blog + Comments System                        | Medium        | Node.js/PostgreSQL  | ✅Done  |
+| 43  | 📦 CRUD                | Bookmark Manager                              | Medium        | Node.js/PostgreSQL  | ✅Done  |
+| 44  | 📦 CRUD                | Resume Builder API                            | Medium        | Node.js/PostgreSQL  | ✅Done  |
+| 45  | 📦 CRUD                | Client-Project Tracker                        | Medium        | Node.js/PostgreSQL  | ✅Done  |
+| 46  | 📦 CRUD                | Student Management System                     | Medium        | Node.js/PostgreSQL  | ✅Done  |
+| 47  | 📦 CRUD                | Travel Bucket List API                        | Medium        | Node.js/PostgreSQL  | ✅Done  |
+| 48  | 📦 CRUD                | Learning Path Tracker                         | Medium        | Node.js/PostgreSQL  | ✅Done  |
 | 49  | 🧠 Intermediate         | Chat App Backend (Socket.IO / WebSocket)      | Medium        | Node.js/Socket.IO  | ✅Done  |
 | 50  | 🧠 Intermediate         | Quiz App API                                  | Medium        | Node.js            | ✅Done  |
-| 51  | 🧠 Intermediate         | Live Polling API                              | Medium        | Node.js            | ☐ Not Started  |
+| 51  | 🧠 Intermediate         | Live Polling API                              | Medium        | Node.js            | ✅Done  |
 | 52  | 🧠 Intermediate         | Expense Tracker                               | Medium        | Node.js            | ☐ Not Started  |
 | 53  | 🧠 Intermediate         | Notification Service                          | Medium        | Node.js            | ☐ Not Started  |
 | 54  | 🧠 Intermediate         | Real-time Voting System                       | Medium        | Node.js            | ☐ Not Started  |

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "b6efec3d-d406-43a4-8c7c-4ff71971eab5",
+    "question": "What is your favorite programming language?",
+    "options": [
+      {
+        "option": "JavaScript",
+        "votes": 0
+      },
+      {
+        "option": "Python",
+        "votes": 1
+      },
+      {
+        "option": "Go",
+        "votes": 0
+      },
+      {
+        "option": "Rust",
+        "votes": 0
+      }
+    ]
+  }
+]
