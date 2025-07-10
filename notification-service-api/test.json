@@ -1,0 +1,62 @@
+{
+  "info": {
+    "name": "Notification Service API",
+    "_postman_id": "a1b2c3d4-5678-9101-1121-314151617181",
+    "description": "Postman collection for testing Notification Service API built with Node.js ES7",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Notifications",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/notifications",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "notifications"]
+        }
+      }
+    },
+    {
+      "name": "Send New Notification",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Test Notification\",\n  \"message\": \"This is a test message.\",\n  \"recipient\": \"user@example.com\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/notifications",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "notifications"]
+        }
+      }
+    },
+    {
+      "name": "Mark Notification as Read",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/notifications/:id/read",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "notifications", ":id", "read"]
+        },
+        "description": "Replace `:id` with actual notification ID returned from POST or GET request."
+      }
+    }
+  ]
+}
