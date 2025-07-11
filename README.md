@@ -56,7 +56,7 @@
 | 51  | 🧠 Intermediate         | Live Polling API                              | Medium        | Node.js            | ✅Done  |
 | 52  | 🧠 Intermediate         | Expense Tracker                               | Medium        | Node.js            | ✅Done  |
 | 53  | 🧠 Intermediate         | Notification Service                          | Medium        | Node.js            | ✅Done  |
-| 54  | 🧠 Intermediate         | Real-time Voting System                       | Medium        | Node.js            | ☐ Not Started  |
+| 54  | 🧠 Intermediate         | Real-time Voting System                       | Medium        | Node.js            | ✅Done  |
 | 55  | 🧠 Intermediate         | Image Upload + Cloud Storage (e.g., S3)       | Medium        | Node.js/AWS S3      | ☐ Not Started  |
 | 56  | 🧠 Intermediate         | Rate Limiting Middleware                      | Medium        | Node.js            | ☐ Not Started  |
 | 57  | 🧠 Intermediate         | GraphQL Blog API                              | Medium        | Node.js/GraphQL     | ☐ Not Started  |

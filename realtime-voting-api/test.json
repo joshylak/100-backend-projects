@@ -1,0 +1,49 @@
+{
+  "info": {
+    "_postman_id": "88ef4e7a-2e3b-4f8c-b68f-00112233abcd",
+    "name": "Realtime Voting API",
+    "description": "Postman collection for testing the Real-time Voting System API built with Node.js ES7.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Votes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/votes",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "votes"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Submit Vote",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"option\": \"Option A\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/votes",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "votes"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
