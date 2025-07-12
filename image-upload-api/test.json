@@ -1,0 +1,39 @@
+    {
+    "info": {
+        "name": "Image Upload + Cloud Storage API",
+        "_postman_id": "eb792ad1-5171-40c1-b1c1-d87a2f389c40",
+        "description": "Upload an image to Cloudinary using a Node.js API with Express, Multer, and ES7 syntax.",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+        "name": "Upload Image",
+        "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+            "mode": "formdata",
+            "formdata": [
+                {
+                "key": "image",
+                "type": "file",
+                "src": ""
+                }
+            ]
+            },
+            "url": {
+            "raw": "http://localhost:5000/upload",
+            "protocol": "http",
+            "host": [
+                "localhost"
+            ],
+            "port": "5000",
+            "path": [
+                "upload"
+            ]
+            }
+        },
+        "response": []
+        }
+    ]
+    }

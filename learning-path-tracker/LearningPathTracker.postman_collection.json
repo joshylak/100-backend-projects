@@ -1,0 +1,152 @@
+{
+  "info": {
+    "name": "Learning Path Tracker API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Paths",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/paths",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "paths"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Path By ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/paths/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "paths",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create New Path",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Web Development\",\n  \"description\": \"Learn full stack web development\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/paths",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "paths"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Add Topic to Path",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Learn Node.js\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/paths/:id/topics",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "paths",
+            ":id",
+            "topics"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Mark Topic as Completed",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/paths/:pathId/topics/:topicId",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "paths",
+            ":pathId",
+            "topics",
+            ":topicId"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delete a Path",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/paths/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "paths",
+            ":id"
+          ]
+        }
+      }
+    }
+  ]
+}
