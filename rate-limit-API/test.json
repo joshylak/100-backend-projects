@@ -1,0 +1,25 @@
+{
+  "info": {
+    "_postman_id": "d3b1c7a4-ec27-4262-9b18-123456789000",
+    "name": "Rate Limiting Middleware API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "12345678"
+  },
+  "item": [
+    {
+      "name": "GET /api/data (Rate Limited)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/data",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "data"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
