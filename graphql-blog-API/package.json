@@ -1,0 +1,13 @@
+{
+  "name": "graphql-blog-json",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "apollo-server-express": "^3.13.0",
+    "express": "^4.21.2",
+    "graphql": "^16.11.0",
+    "uuid": "^9.0.1"
+  }
+}

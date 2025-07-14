@@ -1,0 +1,90 @@
+    {
+    "info": {
+        "name": "GraphQL Blog API - JSON DB",
+        "_postman_id": "c67ab0a3-712c-4f4c-98a7-graphql123456",
+        "description": "GraphQL Blog API with ES7 and JSON DB",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+        "name": "Create Blog Post",
+        "request": {
+            "method": "POST",
+            "header": [
+            {
+                "key": "Content-Type",
+                "value": "application/json"
+            }
+            ],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"query\": \"mutation { createPost(title: \\\"First Post\\\", body: \\\"This is saved in a JSON file\\\", author: \\\"Admin\\\") { id title author createdAt } }\"\n        }"
+            },
+            "url": {
+            "raw": "http://localhost:4000/graphql",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "4000",
+            "path": ["graphql"]
+            }
+        },
+        "response": []
+        },
+        {
+        "name": "Get All Blog Posts",
+        "request": {
+            "method": "POST",
+            "header": [
+            {
+                "key": "Content-Type",
+                "value": "application/json"
+            }
+            ],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"query\": \"query { getPosts { id title body author createdAt } }\"\n        }"
+            },
+            "url": {
+            "raw": "http://localhost:4000/graphql",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "4000",
+            "path": ["graphql"]
+            }
+        },
+        "response": []
+        },
+        {
+        "name": "Get Single Blog Post (replace ID)",
+        "request": {
+            "method": "POST",
+            "header": [
+            {
+                "key": "Content-Type",
+                "value": "application/json"
+            }
+            ],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"query\": \"query { getPost(id: \\\"REPLACE_WITH_ID\\\") { title author body } }\"\n        }"
+            },
+            "url": {
+            "raw": "http://localhost:4000/graphql",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "4000",
+            "path": ["graphql"]
+            }
+        },
+        "response": []
+        },
+        {
+        "name": "Delete Blog Post (replace ID)",
+        "request": {
+            "method": "POST",
+            "header": [
+            {
+                "key": "Content-Type",
+                "value": "application/json"
+            }
+            ],
