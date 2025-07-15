@@ -60,7 +60,7 @@
 | 55  | 🧠 Intermediate         | Image Upload + Cloud Storage (e.g., S3)       | Medium        | Node.js/AWS S3     | ✅Done  |
 | 56  | 🧠 Intermediate         | Rate Limiting Middleware                      | Medium        | Node.js            | ✅Done  |
 | 57  | 🧠 Intermediate         | GraphQL Blog API                              | Medium        | Node.js/GraphQL    | ✅Done  |
-| 58  | 🧠 Intermediate         | Payment Gateway Integration (Stripe)          | Medium        | Node.js/Stripe      | ☐ Not Started  |
+| 58  | 🧠 Intermediate         | Payment Gateway Integration (Stripe)          | Medium        | Node.js/Stripe     | ✅Done  |
 | 59  | 🧠 Intermediate         | GitHub Activity Tracker                       | Medium        | Node.js/GitHub API  | ☐ Not Started  |
 | 60  | 🧠 Intermediate         | Webhook Receiver                              | Medium        | Node.js            | ☐ Not Started  |
 | 61  | 🧠 Intermediate         | Custom API Gateway                            | Medium        | Node.js            | ☐ Not Started  |
