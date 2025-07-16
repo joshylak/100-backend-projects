@@ -1,0 +1,44 @@
+{
+  "info": {
+    "name": "GitHub Activity Tracker API",
+    "_postman_id": "12345678-abcd-efgh-ijkl-1234567890ab",
+    "description": "Postman collection for tracking GitHub user public activity using Node.js API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get GitHub User Activity",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/github/activity/:username",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "github",
+            "activity",
+            ":username"
+          ],
+          "variable": [
+            {
+              "key": "username",
+              "value": "octocat"
+            }
+          ]
+        },
+        "description": "Fetch recent public GitHub activity for a user"
+      },
+      "response": []
+    }
+  ]
+}

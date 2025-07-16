@@ -61,7 +61,7 @@
 | 56  | 🧠 Intermediate         | Rate Limiting Middleware                      | Medium        | Node.js            | ✅Done  |
 | 57  | 🧠 Intermediate         | GraphQL Blog API                              | Medium        | Node.js/GraphQL    | ✅Done  |
 | 58  | 🧠 Intermediate         | Payment Gateway Integration (Stripe)          | Medium        | Node.js/Stripe     | ✅Done  |
-| 59  | 🧠 Intermediate         | GitHub Activity Tracker                       | Medium        | Node.js/GitHub API  | ☐ Not Started  |
+| 59  | 🧠 Intermediate         | GitHub Activity Tracker                       | Medium        | Node.js/GitHub API | ✅Done  |
 | 60  | 🧠 Intermediate         | Webhook Receiver                              | Medium        | Node.js            | ☐ Not Started  |
 | 61  | 🧠 Intermediate         | Custom API Gateway                            | Medium        | Node.js            | ☐ Not Started  |
 | 62  | 🧠 Intermediate         | Multi-language Content API                    | Medium        | Node.js            | ☐ Not Started  |
