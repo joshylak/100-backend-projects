@@ -1,0 +1,66 @@
+    {
+    "info": {
+        "_postman_id": "c308a0cc-2e89-437e-b4f9-123456789abc",
+        "name": "Webhook API",
+        "description": "Test collection for Node.js Webhook receiver API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+        "name": "Send Webhook (Valid Signature)",
+        "request": {
+            "method": "POST",
+            "header": [
+            {
+                "key": "Content-Type",
+                "value": "application/json"
+            },
+            {
+                "key": "x-webhook-signature",
+                "value": "{{computed_signature}}"
+            }
+            ],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"event\": \"test_event\",\n  \"message\": \"This is a test payload\"\n}"
+            },
+            "url": {
+            "raw": "http://localhost:5000/webhook",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5000",
+            "path": ["webhook"]
+            }
+        },
+        "event": [
+            {
+            "listen": "prerequest",
+            "script": {
+                "exec": [
+                "const crypto = require('crypto-js');",
+                "const body = '{\\n  \"event\": \"test_event\",\\n  \"message\": \"This is a test payload\"\\n}';",
+                "const secret = pm.environment.get(\"WEBHOOK_SECRET\") || 'supersecretkey';",
+                "const signature = crypto.HmacSHA256(body, secret).toString();",
+                "pm.environment.set(\"computed_signature\", signature);"
+                ],
+                "type": "text/javascript"
+            }
+            },
+            {
+            "listen": "test",
+            "script": {
+                "exec": [
+                "pm.test(\"Status code is 200\", function () {",
+                "    pm.response.to.have.status(200);",
+                "});",
+                "pm.test(\"Response contains 'Webhook received'\", function () {",
+                "    pm.expect(pm.response.text()).to.include(\"Webhook received\");",
+                "});"
+                ],
+                "type": "text/javascript"
+            }
+            }
+        ]
+        }
+    ]
+    }
