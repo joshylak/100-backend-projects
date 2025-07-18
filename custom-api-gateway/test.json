@@ -1,0 +1,78 @@
+{
+  "info": {
+    "_postman_id": "3bcf1e24-03a1-4f95-931a-7cb6e377b4cb",
+    "name": "Custom API Gateway (Node.js) + Dummy User Service",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "🔓 Get Public Users (Gateway)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/public/users",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["public", "users"]
+        }
+      }
+    },
+    {
+      "name": "🔓 Get Public Users (Direct to User Service)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4001/users",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4001",
+          "path": ["users"]
+        }
+      }
+    },
+    {
+      "name": "🔐 Get Orders (with JWT)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{JWT_TOKEN}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/order/items",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["order", "items"]
+        }
+      }
+    },
+    {
+      "name": "🔐 Get Orders (no token)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/order/items",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["order", "items"]
+        }
+      }
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "key": "JWT_TOKEN",
+      "value": "your_jwt_token_here"
+    }
+  ]
+}
