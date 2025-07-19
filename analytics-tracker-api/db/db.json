@@ -1,0 +1,46 @@
+{
+  "events": [
+    {
+      "type": "page_view",
+      "userId": "user_001",
+      "metadata": {
+        "page": "/home"
+      },
+      "timestamp": "2025-07-19T07:00:00.000Z"
+    },
+    {
+      "type": "button_click",
+      "userId": "user_002",
+      "metadata": {
+        "button": "signup"
+      },
+      "timestamp": "2025-07-19T07:05:00.000Z"
+    },
+    {
+      "type": "form_submit",
+      "userId": "user_003",
+      "metadata": {
+        "formId": "newsletter",
+        "email": "test@example.com"
+      },
+      "timestamp": "2025-07-19T07:10:00.000Z"
+    },
+    {
+      "type": "video_play",
+      "userId": "user_004",
+      "metadata": {
+        "videoId": "abc123",
+        "durationWatched": 45
+      },
+      "timestamp": "2025-07-19T07:15:00.000Z"
+    },
+    {
+      "type": "page_view",
+      "userId": "user_001",
+      "metadata": {
+        "page": "/home"
+      },
+      "timestamp": "2025-07-19T07:34:01.914Z"
+    }
+  ]
+}

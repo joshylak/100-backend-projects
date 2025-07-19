@@ -1,0 +1,48 @@
+    {
+    "info": {
+        "_postman_id": "abc12345-6789-4321-1234-def56789abcd",
+        "name": "Analytics Tracker API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+        "name": "Track Event",
+        "request": {
+            "method": "POST",
+            "header": [
+            {
+                "key": "Content-Type",
+                "value": "application/json"
+            }
+            ],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"type\": \"page_view\",\n  \"userId\": \"user_001\",\n  \"metadata\": {\n    \"page\": \"/home\"\n  }\n}"
+            },
+            "url": {
+            "raw": "http://localhost:4000/api/analytics/track",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "4000",
+            "path": ["api", "analytics", "track"]
+            }
+        },
+        "response": []
+        },
+        {
+        "name": "Get All Events",
+        "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+            "raw": "http://localhost:4000/api/analytics/events",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "4000",
+            "path": ["api", "analytics", "events"]
+            }
+        },
+        "response": []
+        }
+    ]
+    }

@@ -64,7 +64,7 @@
 | 59  | 🧠 Intermediate         | GitHub Activity Tracker                       | Medium        | Node.js/GitHub API | ✅Done  |
 | 60  | 🧠 Intermediate         | Webhook Receiver                              | Medium        | Node.js            | ✅Done  |
 | 61  | 🧠 Intermediate         | Custom API Gateway                            | Medium        | Node.js            | ✅Done  |
-| 63  | 🧠 Intermediate         | Analytics Tracker API                         | Medium        | Node.js            | ☐ Not Started  |
+| 63  | 🧠 Intermediate         | Analytics Tracker API                         | Medium        | Node.js            | ✅Done  |
 | 64  | 🧠 Intermediate         | Collaborative Notes API                       | Medium        | Node.js            | ☐ Not Started  |
 | 65  | 🧠 Intermediate         | File Compression API                          | Medium        | Node.js            | ☐ Not Started  |
 | 66  | 🧠 Intermediate         | Geo-location Tracker                          | Medium        | Node.js            | ☐ Not Started  |
