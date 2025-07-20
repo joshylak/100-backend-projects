@@ -1,0 +1,96 @@
+{
+  "info": {
+    "name": "Collaborative Notes API",
+    "_postman_id": "cnotes-collection-uuid-123",
+    "description": "A collaborative notes-taking API using Node.js and a JSON file as the database.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Notes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/notes",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "notes"]
+        }
+      }
+    },
+    {
+      "name": "Create Note",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Project Ideas\",\n  \"content\": \"1. Chat App\\n2. POS App\",\n  \"owner\": \"john@example.com\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/notes",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "notes"]
+        }
+      }
+    },
+    {
+      "name": "Update Note",
+      "request": {
+        "method": "PUT",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"user\": \"john@example.com\",\n  \"title\": \"Updated Title\",\n  \"content\": \"Updated content here.\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/notes/:id",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "notes", ":id"]
+        }
+      }
+    },
+    {
+      "name": "Delete Note",
+      "request": {
+        "method": "DELETE",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"user\": \"john@example.com\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/notes/:id",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "notes", ":id"]
+        }
+      }
+    },
+    {
+      "name": "Share Note",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"owner\": \"john@example.com\",\n  \"collaborator\": \"sarah@example.com\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/notes/:id/share",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "notes", ":id", "share"]
+        }
+      }
+    }
+  ]
+}

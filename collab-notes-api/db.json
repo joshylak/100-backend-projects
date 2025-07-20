@@ -1,0 +1,13 @@
+{
+  "notes": [
+    {
+      "id": "0b056825-b62f-4185-95df-93bdd210d931",
+      "title": "Updated Title",
+      "content": "Updated content here.",
+      "owner": "john@example.com",
+      "collaborators": [
+        "sarah@example.com"
+      ]
+    }
+  ]
+}
