@@ -1,0 +1,35 @@
+{
+  "info": {
+    "name": "File Compression API",
+    "_postman_id": "a3ddde6a-8a18-4a2b-b80a-89c8cb781ffe",
+    "description": "Postman collection to test the File Compression API built with Node.js. Upload a file and receive the compressed version.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Compress File (Upload & Download .gz)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": ""
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/compress",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "compress"]
+        }
+      },
+      "response": []
+    }
+  ]
+}

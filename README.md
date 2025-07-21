@@ -66,7 +66,7 @@
 | 61  | 🧠 Intermediate         | Custom API Gateway                            | Medium        | Node.js            | ✅Done  |
 | 63  | 🧠 Intermediate         | Analytics Tracker API                         | Medium        | Node.js            | ✅Done  |
 | 64  | 🧠 Intermediate         | Collaborative Notes API                       | Medium        | Node.js            | ✅Done  |
-| 65  | 🧠 Intermediate         | File Compression API                          | Medium        | Node.js            | ☐ Not Started  |
+| 65  | 🧠 Intermediate         | File Compression API                          | Medium        | Node.js            | ✅Done  |
 | 66  | 🧠 Intermediate         | Geo-location Tracker                          | Medium        | Node.js            | ☐ Not Started  |
 | 67  | 🧠 Intermediate         | Task Queue with Redis + Bull                  | Medium        | Node.js/Redis       | ☐ Not Started  |
 | 68  | 🧠 Intermediate         | Scheduler Service (Cron API)                  | Medium        | Node.js            | ☐ Not Started  |
