@@ -1,0 +1,55 @@
+    {
+    "info": {
+        "name": "Geo-location Tracker API",
+        "_postman_id": "12345678-90ab-cdef-1234-567890abcdef",
+        "description": "A simple API to track and retrieve user geo-locations.",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+        "name": "POST - Save Location",
+        "request": {
+            "method": "POST",
+            "header": [
+            {
+                "key": "Content-Type",
+                "value": "application/json"
+            }
+            ],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"userId\": \"123\",\n  \"latitude\": 6.5244,\n  \"longitude\": 3.3792\n}"
+            },
+            "url": {
+            "raw": "http://localhost:5000/api/locations",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5000",
+            "path": ["api", "locations"]
+            }
+        },
+        "response": []
+        },
+        {
+        "name": "GET - User Locations",
+        "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+            "raw": "http://localhost:5000/api/locations?userId=123",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5000",
+            "path": ["api", "locations"],
+            "query": [
+                {
+                "key": "userId",
+                "value": "123"
+                }
+            ]
+            }
+        },
+        "response": []
+        }
+    ]
+    }
