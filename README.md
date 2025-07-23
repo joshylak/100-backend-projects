@@ -68,7 +68,7 @@
 | 64  | 🧠 Intermediate         | Collaborative Notes API                       | Medium        | Node.js            | ✅Done  |
 | 65  | 🧠 Intermediate         | File Compression API                          | Medium        | Node.js            | ✅Done  |
 | 66  | 🧠 Intermediate         | Geo-location Tracker                          | Medium        | Node.js            | ✅Done  |
-| 67  | 🧠 Intermediate         | Task Queue with Redis + Bull                  | Medium        | Node.js/Redis       | ☐ Not Started  |
+| 67  | 🧠 Intermediate         | Task Queue with Redis + Bull                  | Medium        | Node.js/Redis      | ✅Done  |
 | 68  | 🧠 Intermediate         | Scheduler Service (Cron API)                  | Medium        | Node.js            | ☐ Not Started  |
 | 69  | 🚀 Advanced             | CI/CD Service (GitHub Webhook Trigger)        | Hard          | Node.js            | ☐ Not Started  |
 | 70  | 🚀 Advanced             | Chatbot Backend (rule-based or AI integration)| Hard          | Node.js            | ☐ Not Started  |

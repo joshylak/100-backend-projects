@@ -1,0 +1,58 @@
+{
+  "info": {
+    "_postman_id": "abc12345-6789-4444-aaaa-bullredis-task-api",
+    "name": "Task Queue API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "API for managing background jobs using Bull and Redis"
+  },
+  "item": [
+    {
+      "name": "Add New Task",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Sample Task\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/task",
+          "host": ["{{base_url}}"],
+          "path": ["task"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Task Status",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/task/:id",
+          "host": ["{{base_url}}"],
+          "path": ["task", ":id"],
+          "variable": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:3000"
+    }
+  ]
+}
