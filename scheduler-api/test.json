@@ -1,0 +1,64 @@
+    {
+    "info": {
+        "name": "Cron Scheduler API",
+        "_postman_id": "c01d3212-712a-4ad2-bd51-cfbb92a217d9",
+        "description": "API for scheduling and managing cron jobs",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+        "name": "Create Cron Job",
+        "request": {
+            "method": "POST",
+            "header": [
+            {
+                "key": "Content-Type",
+                "value": "application/json"
+            }
+            ],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n  \"cronTime\": \"* * * * *\",\n  \"task\": {\n    \"message\": \"Hello from scheduled task\"\n  }\n}"
+            },
+            "url": {
+            "raw": "http://localhost:3000/api/scheduler/create",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "scheduler", "create"]
+            }
+        },
+        "response": []
+        },
+        {
+        "name": "List Cron Jobs",
+        "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+            "raw": "http://localhost:3000/api/scheduler/",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "scheduler", ""]
+            }
+        },
+        "response": []
+        },
+        {
+        "name": "Delete Cron Job",
+        "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+            "raw": "http://localhost:3000/api/scheduler/{{jobId}}",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "scheduler", "{{jobId}}"]
+            }
+        },
+        "response": []
+        }
+    ]
+    }
