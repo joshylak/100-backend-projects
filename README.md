@@ -71,7 +71,7 @@
 | 67  | 🧠 Intermediate         | Task Queue with Redis + Bull                  | Medium        | Node.js/Redis      | ✅Done |
 | 68  | 🧠 Intermediate         | Scheduler Service (Cron API)                  | Medium        | Node.js            | ✅Done |
 | 69  | 🚀 Advanced             | CI/CD Service (GitHub Webhook Trigger)        | Hard          | Node.js            | ✅Done |
-| 70  | 🚀 Advanced             | Chatbot Backend (rule-based or AI integration)| Hard          | Node.js            | ☐ Not Started  |
+| 70  | 🚀 Advanced             | Chatbot Backend (rule-based or AI integration)| Hard          | Node.js            | ✅Done |
 | 71  | 🚀 Advanced             | Multi-user Document Editor (real-time)        | Hard          | Node.js            | ☐ Not Started  |
 | 72  | 🚀 Advanced             | API Rate Limiting as a Service                | Hard          | Node.js            | ☐ Not Started  |
 | 73  | 🚀 Advanced             | Custom OAuth2 Provider                        | Hard          | Node.js            | ☐ Not Started  |
