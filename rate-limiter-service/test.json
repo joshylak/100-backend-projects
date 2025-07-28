@@ -1,0 +1,33 @@
+    {
+    "info": {
+        "_postman_id": "c0e758c8-4ac2-47e1-bc8c-9b6f8c830be4",
+        "name": "Rate Limiter Service",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+        "name": "Check Rate Limit",
+        "request": {
+            "method": "POST",
+            "header": [
+            {
+                "key": "Content-Type",
+                "value": "application/json"
+            }
+            ],
+            "body": {
+            "mode": "raw",
+            "raw": "{\n    \"key\": \"user123\"\n}"
+            },
+            "url": {
+            "raw": "http://localhost:3000/check-limit",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["check-limit"]
+            }
+        },
+        "response": []
+        }
+    ]
+    }
