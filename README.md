@@ -51,8 +51,8 @@
 | 46  | 📦 CRUD                | Student Management System                     | Medium        | Node.js/PostgreSQL  | ✅Done |
 | 47  | 📦 CRUD                | Travel Bucket List API                        | Medium        | Node.js/PostgreSQL  | ✅Done |
 | 48  | 📦 CRUD                | Learning Path Tracker                         | Medium        | Node.js/PostgreSQL  | ✅Done |
-| 49  | 🧠 Intermediate         | Chat App Backend (Socket.IO / WebSocket)      | Medium        | Node.js/Socket.IO  | ✅Done |
-| 50  | 🧠 Intermediate         | Quiz App API                                  | Medium        | Node.js            | ✅Done |
+| 49  | 🧠 Intermediate        | Chat App Backend (Socket.IO / WebSocket)      | Medium        | Node.js/Socket.IO   | ✅Done |
+| 50  | 🧠 Intermediate        | Quiz App API                                 | Medium         | Node.js             | ✅Done |
 | 51  | 🧠 Intermediate         | Live Polling API                              | Medium        | Node.js            | ✅Done |
 | 52  | 🧠 Intermediate         | Expense Tracker                               | Medium        | Node.js            | ✅Done |
 | 53  | 🧠 Intermediate         | Notification Service                          | Medium        | Node.js            | ✅Done |
@@ -100,3 +100,5 @@
 | 96  | 🌐 Deployment          | GitHub Actions for CI/CD                      | Hard          | Node.js/GitHub      | ☐ Not Started  |
 | 97  | 🌐 Deployment          | Logging with ELK Stack                        | Hard          | Node.js/ELK Stack   | ☐ Not Started  |
 | 98  | 🌐 Deployment          | Infrastructure-as-Code (Terraform) for One Project | Hard      | Node.js/Terraform  | ☐ Not Started  |
+| 99  | 🌐 Deployment          | Monitoring with Prometheus + Grafana          | Hard          | Node.js/Prometheus  | ☐ Not Started  |
+| 100 | 🧠 AI/ML Integration   | AI-Powered Resume Matcher (Job vs Resume)     | Hard          | Node.js/OpenAI      | ☐ Not Started  |
