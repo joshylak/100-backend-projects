@@ -1,0 +1,26 @@
+{
+  "clients": [
+    {
+      "client_id": "client123",
+      "client_secret": "$2b$12$0I.WPWCjVGBo2gaJfbdjYu36YmIEb0lEvJEl30W4unPzx9hezfN2y",
+      "redirect_uris": [
+        "http://localhost:4000/callback"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "user123",
+      "username": "user1",
+      "password": "pass1"
+    }
+  ],
+  "authCodes": [],
+  "tokens": [
+    {
+      "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoidXNlcjEyMyIsImlhdCI6MTc1Mzc3MTQ0OCwiZXhwIjoxNzUzNzcyMzQ4fQ.W6KY5Dd6xY1CmFK_9HwPo63vIb7KGLlHjGtdowH-YvI",
+      "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoidXNlcjEyMyIsImlhdCI6MTc1Mzc3MTQ0OCwiZXhwIjoxNzU0Mzc2MjQ4fQ.wXBV4AstHnEhfTPz1Ks3Y8RUIpSd576a7oURwHuSK_M",
+      "user_id": "user123"
+    }
+  ]
+}

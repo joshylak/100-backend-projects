@@ -1,0 +1,29 @@
+{
+  "name": "custom-oauth2-provider",
+  "version": "1.0.0",
+  "description": "A simple OAuth2 Provider built with Node.js, Express, and lowdb.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "oauth2",
+    "nodejs",
+    "express",
+    "jwt",
+    "lowdb",
+    "auth"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "lowdb": "^6.1.1",
+    "uuid": "^9.0.1"
+  }
+}

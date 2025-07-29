@@ -74,7 +74,7 @@
 | 70  | 🚀 Advanced             | Chatbot Backend (rule-based or AI integration)| Hard          | Node.js            | ✅Done |
 | 71  | 🚀 Advanced             | Multi-user Document Editor (real-time)        | Hard          | Node.js            | ✅Done |
 | 72  | 🚀 Advanced             | API Rate Limiting as a Service                | Hard          | Node.js            | ✅Done |
-| 73  | 🚀 Advanced             | Custom OAuth2 Provider                        | Hard          | Node.js            | ☐ Not Started  |
+| 73  | 🚀 Advanced             | Custom OAuth2 Provider                        | Hard          | Node.js            | ✅Done |
 | 74  | 🚀 Advanced             | SaaS Subscription Billing                     | Hard          | Node.js            | ☐ Not Started  |
 | 75  | 🚀 Advanced             | Video Upload and Streaming Backend            | Hard          | Node.js            | ☐ Not Started  |
 | 76  | 🚀 Advanced             | API Monitoring Tool                           | Hard          | Node.js            | ☐ Not Started  |
