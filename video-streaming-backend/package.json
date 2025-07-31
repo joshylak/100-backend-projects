@@ -1,0 +1,32 @@
+{
+  "name": "video-upload-streaming-backend",
+  "version": "1.0.0",
+  "description": "A simple Node.js backend for uploading and streaming video files using JSON DB.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "video",
+    "upload",
+    "streaming",
+    "nodejs",
+    "lowdb",
+    "express",
+    "json-db"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "lowdb": "^6.0.1",
+    "multer": "^1.4.5-lts.1",
+    "nanoid": "^5.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

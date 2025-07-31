@@ -1,0 +1,88 @@
+    {
+    "info": {
+        "_postman_id": "bb3a92f7-859c-4971-8a6a-abcdef123456",
+        "name": "Video Upload & Streaming API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+        "name": "Upload Video",
+        "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+            "mode": "formdata",
+            "formdata": [
+                {
+                "key": "title",
+                "value": "Sample Video",
+                "type": "text"
+                },
+                {
+                "key": "video",
+                "type": "file",
+                "src": ""
+                }
+            ]
+            },
+            "url": {
+            "raw": "http://localhost:3000/api/videos/upload",
+            "protocol": "http",
+            "host": [
+                "localhost"
+            ],
+            "port": "3000",
+            "path": [
+                "api",
+                "videos",
+                "upload"
+            ]
+            }
+        },
+        "response": []
+        },
+        {
+        "name": "List All Videos",
+        "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+            "raw": "http://localhost:3000/api/videos",
+            "protocol": "http",
+            "host": [
+                "localhost"
+            ],
+            "port": "3000",
+            "path": [
+                "api",
+                "videos"
+            ]
+            }
+        },
+        "response": []
+        },
+        {
+        "name": "Stream Video by Filename",
+        "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+            "raw": "http://localhost:3000/api/videos/stream/{filename}",
+            "protocol": "http",
+            "host": [
+                "localhost"
+            ],
+            "port": "3000",
+            "path": [
+                "api",
+                "videos",
+                "stream",
+                "{filename}"
+            ]
+            },
+            "description": "Replace {filename} with an actual filename returned from the List All Videos endpoint."
+        },
+        "response": []
+        }
+    ]
+    }
