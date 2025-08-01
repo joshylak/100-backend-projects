@@ -1,0 +1,14 @@
+{
+  "name": "api-monitor-tool",
+  "version": "1.0.0",
+  "main": "monitor.js",
+  "type": "module",
+  "scripts": {
+    "start": "node monitor.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "lowdb": "^6.0.1",
+    "node-cron": "^3.0.2"
+  }
+}

@@ -77,7 +77,7 @@
 | 73  | 🚀 Advanced             | Custom OAuth2 Provider                        | Hard          | Node.js            | ✅Done |
 | 74  | 🚀 Advanced             | SaaS Subscription Billing                     | Hard          | Node.js            | ✅Done |
 | 75  | 🚀 Advanced             | Video Upload and Streaming Backend            | Hard          | Node.js            | ✅Done |
-| 76  | 🚀 Advanced             | API Monitoring Tool                           | Hard          | Node.js            | ☐ Not Started  |
+| 76  | 🚀 Advanced             | API Monitoring Tool                           | Hard          | Node.js            | ✅Done |
 | 77  | 🚀 Advanced             | Headless CMS                                  | Hard          | Node.js            | ☐ Not Started  |
 | 78  | 🚀 Advanced             | Forum Backend (Threads, Replies, Moderation)  | Hard          | Node.js            | ☐ Not Started  |
 | 79  | 🚀 Advanced             | E-commerce Backend with Cart, Checkout        | Hard          | Node.js            | ☐ Not Started  |

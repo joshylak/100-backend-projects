@@ -1,0 +1,15 @@
+### Test GitHub API
+GET https://api.github.com
+Accept: application/json
+
+###
+
+### Test JSONPlaceholder API
+GET https://jsonplaceholder.typicode.com/posts
+Accept: application/json
+
+###
+
+### Simulate a Failed Endpoint
+GET https://not-a-real-site-123456.com
+Accept: application/json

@@ -1,0 +1,13 @@
+{
+  "endpoints": [
+    {
+      "url": "https://api.github.com",
+      "threshold": 1000
+    },
+    {
+      "url": "https://jsonplaceholder.typicode.com/posts",
+      "threshold": 1200
+    }
+  ],
+  "interval": "*/1 * * * *"
+}
