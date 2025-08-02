@@ -1,0 +1,186 @@
+{
+  "info": {
+    "name": "Headless CMS - JSON DB",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_postman_id": "e264238b-489f-43a9-a355-d83e2ccfe578"
+  },
+  "item": [
+    {
+      "name": "Register",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"admin@example.com\",\n  \"password\": \"123456\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/register",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "auth", "register"]
+        }
+      }
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"admin@example.com\",\n  \"password\": \"123456\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/login",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "auth", "login"]
+        }
+      }
+    },
+    {
+      "name": "Create Content (with image)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "title",
+              "value": "My First Post",
+              "type": "text"
+            },
+            {
+              "key": "body",
+              "value": "This is content created from Postman",
+              "type": "text"
+            },
+            {
+              "key": "type",
+              "value": "blog",
+              "type": "text"
+            },
+            {
+              "key": "image",
+              "type": "file",
+              "src": "/absolute/path/to/example.jpg"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/content",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "content"]
+        }
+      }
+    },
+    {
+      "name": "Get All Content",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5000/api/content",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "content"]
+        }
+      }
+    },
+    {
+      "name": "Get Content by Slug",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5000/api/content/my-first-post-abc12",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "content", "my-first-post-abc12"]
+        }
+      }
+    },
+    {
+      "name": "Update Content",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "title",
+              "value": "Updated Title",
+              "type": "text"
+            },
+            {
+              "key": "body",
+              "value": "Updated body content",
+              "type": "text"
+            },
+            {
+              "key": "type",
+              "value": "blog",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/content/my-first-post-abc12",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "content", "my-first-post-abc12"]
+        }
+      }
+    },
+    {
+      "name": "Delete Content",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5000/api/content/my-first-post-abc12",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "content", "my-first-post-abc12"]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "token",
+      "value": ""
+    }
+  ]
+}
