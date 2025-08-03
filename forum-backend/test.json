@@ -1,0 +1,115 @@
+{
+  "info": {
+    "name": "Forum Backend API",
+    "_postman_id": "77e5f82d-6a47-4c78-bbf7-020a1182c57d",
+    "description": "API collection for Threads, Replies and Moderation using Node.js and LowDB",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Threads",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/threads",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["threads"]
+        }
+      }
+    },
+    {
+      "name": "Create Thread",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"How to learn Node.js?\",\n  \"content\": \"Looking for beginner resources\",\n  \"author\": \"dev_jane\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/threads",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["threads"]
+        }
+      }
+    },
+    {
+      "name": "Delete Thread (Soft)",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/threads/:id",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["threads", ":id"]
+        },
+        "description": "Replace :id with thread ID"
+      }
+    },
+    {
+      "name": "Get Replies for Thread",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/replies/:threadId",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["replies", ":threadId"]
+        },
+        "description": "Replace :threadId with actual thread ID"
+      }
+    },
+    {
+      "name": "Post Reply",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"threadId\": \"REPLACE_THREAD_ID\",\n  \"content\": \"Check Node.js docs\",\n  \"author\": \"dev_john\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/replies",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["replies"]
+        }
+      }
+    },
+    {
+      "name": "Delete Reply (Soft)",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/replies/:id",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["replies", ":id"]
+        },
+        "description": "Replace :id with reply ID"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "threads": [
+    {
+      "id": "ppcC6cJP6EnUEdX1PbN2L",
+      "title": "How to learn Node.js?",
+      "content": "Looking for beginner resources",
+      "author": "dev_jane",
+      "createdAt": 1754233469610,
+      "deleted": false
+    }
+  ],
+  "replies": [
+    {
+      "id": "lcMnpO7Ad3NymcgCLFd0Y",
+      "threadId": "REPLACE_THREAD_ID",
+      "content": "Check Node.js docs",
+      "author": "dev_john",
+      "createdAt": 1754233905727,
+      "deleted": false
+    }
+  ]
+}
