@@ -80,7 +80,7 @@
 | 76  | 🚀 Advanced             | API Monitoring Tool                           | Hard          | Node.js            | ✅Done |
 | 77  | 🚀 Advanced             | Headless CMS                                  | Hard          | Node.js            | ✅Done |
 | 78  | 🚀 Advanced             | Forum Backend (Threads, Replies, Moderation)  | Hard          | Node.js            | ✅Done |
-| 79  | 🚀 Advanced             | E-commerce Backend with Cart, Checkout        | Hard          | Node.js            | ☐ Not Started  |
+| 79  | 🚀 Advanced             | E-commerce Backend with Cart, Checkout        | Hard          | Node.js            | ✅Done |
 | 80  | 🚀 Advanced             | Microservice Starter Template                 | Hard          | Node.js            | ☐ Not Started  |
 | 81  | 🚀 Advanced             | GraphQL API Gateway                           | Hard          | Node.js/GraphQL     | ☐ Not Started  |
 | 82  | 🚀 Advanced             | Private File Sharing API with Tokens          | Hard          | Node.js            | ☐ Not Started  |

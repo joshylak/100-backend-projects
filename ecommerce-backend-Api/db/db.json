@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": "ec148708-ad84-448d-91dc-f53f7fb448c3",
+      "name": "Nike Sneakers",
+      "price": 25000
+    },
+    {
+      "id": "03b3e169-f71b-4698-9522-92b890bfda9b",
+      "name": "Addidas Sneakers",
+      "price": 25000
+    }
+  ],
+  "cart": [],
+  "orders": [
+    {
+      "id": "fa431929-b28d-47e7-8804-4c1701298339",
+      "items": [
+        {
+          "productId": "03b3e169-f71b-4698-9522-92b890bfda9b",
+          "quantity": 2
+        }
+      ],
+      "total": 50000,
+      "createdAt": "2025-08-04T07:37:35.047Z"
+    }
+  ]
+}
