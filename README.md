@@ -84,8 +84,8 @@
 | 80  | 🚀 Advanced             | Microservice Starter Template                 | Hard          | Node.js            | ✅Done |
 | 81  | 🚀 Advanced             | GraphQL API Gateway                           | Hard          | Node.js/GraphQL    | ✅Done |
 | 82  | 🚀 Advanced             | Private File Sharing API with Tokens          | Hard          | Node.js            | ✅Done |
-| 83  | 🚀 Advanced             | Multi-Region Failover (simulate)              | Hard          | Node.js            | ☐ Not Started  |
-| 84  | 🛠️ DevOps              | Mock API Generator                            | Hard          | Node.js            | ☐ Not Started  |
+| 83  | 🚀 Advanced             | Multi-Region Failover (simulate)              | Hard          | Node.js            | ✅Done |
+| 84  | 🛠️ DevOps              | Mock API Generator                            | Hard          | Node.js             | ✅Done |
 | 85  | 🛠️ DevOps              | Postman Collection Generator                  | Hard          | Node.js            | ☐ Not Started  |
 | 86  | 🛠️ DevOps              | API Doc Generator from Code                   | Hard          | Node.js            | ☐ Not Started  |
 | 87  | 🛠️ DevOps              | Load Testing Tool (like Apache Bench)         | Hard          | Node.js            | ☐ Not Started  |
