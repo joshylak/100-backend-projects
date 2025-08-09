@@ -1,0 +1,117 @@
+{
+  "info": {
+    "name": "Mock API Generator - Users",
+    "_postman_id": "f6d3d9c4-9c23-4fd6-a7f7-a2b7e6e21b2a",
+    "description": "Postman collection for testing the Mock API Generator `/users` endpoint",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Users",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/users",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["users"]
+        }
+      }
+    },
+    {
+      "name": "Get Users - Paginated",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/users?_limit=5&_page=1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["users"],
+          "query": [
+            { "key": "_limit", "value": "5" },
+            { "key": "_page", "value": "1" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get User by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/users/{{userId}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["users", "{{userId}}"]
+        }
+      }
+    },
+    {
+      "name": "Create User",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"firstName\": \"Jane\",\n  \"lastName\": \"Doe\",\n  \"email\": \"jane.doe@example.com\",\n  \"username\": \"jdoe\",\n  \"bio\": \"Custom bio here\",\n  \"age\": 28,\n  \"isActive\": true,\n  \"roles\": [\"user\", \"admin\"]\n}"
+        },
+        "url": {
+          "raw": "http://localhost:4000/users",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["users"]
+        }
+      }
+    },
+    {
+      "name": "Update User (PUT)",
+      "request": {
+        "method": "PUT",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"firstName\": \"Updated\",\n  \"lastName\": \"Name\",\n  \"isActive\": false\n}"
+        },
+        "url": {
+          "raw": "http://localhost:4000/users/{{userId}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["users", "{{userId}}"]
+        }
+      }
+    },
+    {
+      "name": "Delete User",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/users/{{userId}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["users", "{{userId}}"]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "userId",
+      "value": "REPLACE_WITH_USER_ID",
+      "type": "string"
+    }
+  ]
+}
