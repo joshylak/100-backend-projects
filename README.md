@@ -86,7 +86,7 @@
 | 82  | 🚀 Advanced             | Private File Sharing API with Tokens          | Hard          | Node.js            | ✅Done |
 | 83  | 🚀 Advanced             | Multi-Region Failover (simulate)              | Hard          | Node.js            | ✅Done |
 | 84  | 🛠️ DevOps              | Mock API Generator                            | Hard          | Node.js             | ✅Done |
-| 85  | 🛠️ DevOps              | Postman Collection Generator                  | Hard          | Node.js            | ☐ Not Started  |
+| 85  | 🛠️ DevOps              | Postman Collection Generator                  | Hard          | Node.js             | ✅Done|
 | 86  | 🛠️ DevOps              | API Doc Generator from Code                   | Hard          | Node.js            | ☐ Not Started  |
 | 87  | 🛠️ DevOps              | Load Testing Tool (like Apache Bench)         | Hard          | Node.js            | ☐ Not Started  |
 | 88  | 🛠️ DevOps              | Log Aggregator Service                        | Hard          | Node.js            | ☐ Not Started  |

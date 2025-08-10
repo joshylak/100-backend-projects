@@ -1,0 +1,39 @@
+{
+  "info": {
+    "_postman_id": "b62d9a4b-3d71-4ab4-8f4f-abc123456789",
+    "name": "Postman Collection Generator API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Generate Postman Collection",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"My API Collection\",\n    \"requests\": [\n        {\n            \"name\": \"Get Users\",\n            \"method\": \"GET\",\n            \"url\": \"https://jsonplaceholder.typicode.com/users\"\n        },\n        {\n            \"name\": \"Create Post\",\n            \"method\": \"POST\",\n            \"url\": \"https://jsonplaceholder.typicode.com/posts\",\n            \"body\": {\n                \"title\": \"foo\",\n                \"body\": \"bar\",\n                \"userId\": 1\n            }\n        }\n    ]\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/postman/generate",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "postman",
+            "generate"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
