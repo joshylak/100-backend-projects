@@ -1,0 +1,49 @@
+{
+  "info": {
+    "name": "API Doc Generator",
+    "_postman_id": "9f34f3b8-82e9-4f4c-96d4-1e98d1e5e5ab",
+    "description": "Postman collection for API Doc Generator built with Node.js ES7",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Generate Documentation",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"sourcePath\": \"./routes/**/*.js\",\n    \"outputFile\": \"./API_DOCS.md\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/generate-docs",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["generate-docs"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Generated Docs",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/docs",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["docs"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
