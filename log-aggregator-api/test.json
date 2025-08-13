@@ -1,0 +1,85 @@
+{
+  "info": {
+    "name": "Log Aggregator API",
+    "_postman_id": "1f2eac99-1234-4abc-9876-112233445566",
+    "description": "Postman collection for the Log Aggregator API (Node.js + lowdb JSON DB)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Log",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"source\": \"auth-service\",\n    \"level\": \"error\",\n    \"message\": \"Failed login attempt\",\n    \"meta\": { \"ip\": \"127.0.0.1\" }\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/logs",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "logs"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Logs",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/logs",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "logs"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Filter Logs by Level",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/logs?level=error",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "logs"],
+          "query": [
+            { "key": "level", "value": "error" }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Filter Logs by Source",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/logs?source=auth-service",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "logs"],
+          "query": [
+            { "key": "source", "value": "auth-service" }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

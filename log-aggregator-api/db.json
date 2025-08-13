@@ -1,0 +1,24 @@
+{
+  "logs": [
+    {
+      "id": "3ehtEfheM1snFs2uiVmO0",
+      "source": "auth-service",
+      "level": "error",
+      "message": "Failed login attempt",
+      "meta": {
+        "ip": "127.0.0.1"
+      },
+      "timestamp": "2025-08-13T09:11:49.963Z"
+    },
+    {
+      "id": "CeJfywXFf_ioPFm0b_6Ta",
+      "source": "auth-service",
+      "level": "success",
+      "message": "Failed login attempt",
+      "meta": {
+        "ip": "127.0.0.1"
+      },
+      "timestamp": "2025-08-13T09:12:09.311Z"
+    }
+  ]
+}
