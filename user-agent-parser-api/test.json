@@ -1,0 +1,30 @@
+{
+  "info": {
+    "name": "User Agent Parser API",
+    "_postman_id": "c73b4f0f-9a38-4b4d-bc02-1234567890ab",
+    "description": "Collection to test the User Agent Parser API built with Node.js ES7.\nIt extracts browser, OS, and device info from the User-Agent header.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Parse User Agent",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000"
+        }
+      },
+      "response": []
+    }
+  ]
+}
