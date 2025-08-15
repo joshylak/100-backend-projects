@@ -1,0 +1,58 @@
+{
+  "info": {
+    "name": "Schema Validator API",
+    "_postman_id": "f4f5b59b-9d5b-4f8a-84bc-5d25a7c8f702",
+    "description": "Postman collection for testing the Node.js ES7 Schema Validator API.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Validate Schema - Valid Data",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"schema\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"name\": { \"type\": \"string\" },\n      \"age\": { \"type\": \"integer\", \"minimum\": 18 }\n    },\n    \"required\": [\"name\", \"age\"],\n    \"additionalProperties\": false\n  },\n  \"data\": {\n    \"name\": \"John Doe\",\n    \"age\": 25\n  }\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/validate",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "validate"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Validate Schema - Invalid Data",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"schema\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"name\": { \"type\": \"string\" },\n      \"age\": { \"type\": \"integer\", \"minimum\": 18 }\n    },\n    \"required\": [\"name\", \"age\"],\n    \"additionalProperties\": false\n  },\n  \"data\": {\n    \"name\": \"Jane Doe\",\n    \"age\": 15\n  }\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/validate",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "validate"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
