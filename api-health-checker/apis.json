@@ -1,0 +1,5 @@
+[
+  { "name": "Google", "url": "https://www.google.com" },
+  { "name": "GitHub", "url": "https://api.github.com" },
+  { "name": "My Local API", "url": "http://localhost:5000/health" }
+]
