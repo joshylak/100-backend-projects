@@ -1,0 +1,53 @@
+{
+  "metrics": [
+    {
+      "id": "m6",
+      "type": "performance",
+      "message": "Memory usage spike",
+      "value": 780,
+      "createdAt": "2025-08-17T10:25:00.000Z"
+    },
+    {
+      "id": "m5",
+      "type": "request",
+      "message": "API request to /orders endpoint",
+      "value": 17,
+      "createdAt": "2025-08-17T10:20:00.000Z"
+    },
+    {
+      "id": "m4",
+      "type": "error",
+      "message": "Unhandled promise rejection in /checkout",
+      "value": 3,
+      "createdAt": "2025-08-17T10:15:00.000Z"
+    },
+    {
+      "id": "m3",
+      "type": "performance",
+      "message": "Response time for /products",
+      "value": 350,
+      "createdAt": "2025-08-17T10:10:00.000Z"
+    },
+    {
+      "id": "m2",
+      "type": "request",
+      "message": "API request to /login endpoint",
+      "value": 42,
+      "createdAt": "2025-08-17T10:05:00.000Z"
+    },
+    {
+      "id": "m1",
+      "type": "error",
+      "message": "Database connection failed",
+      "value": 1,
+      "createdAt": "2025-08-17T10:00:00.000Z"
+    },
+    {
+      "id": "XC_cBev-nSi9zvoXJrrCw",
+      "type": "error",
+      "message": "Database connection failed",
+      "value": 1,
+      "createdAt": "2025-08-17T11:07:24.251Z"
+    }
+  ]
+}

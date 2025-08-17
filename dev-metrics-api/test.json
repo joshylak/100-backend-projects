@@ -1,0 +1,49 @@
+{
+  "info": {
+    "name": "Dev Metrics API",
+    "_postman_id": "e3a7dcd8-1234-5678-9101-abcdef123456",
+    "description": "Postman collection to test the Dev Metrics API built with Node.js + JSON DB",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Log Metric",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"type\": \"error\",\n    \"message\": \"Database connection failed\",\n    \"value\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/metrics",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "metrics"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Metrics",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/metrics",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "metrics"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
