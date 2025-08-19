@@ -1,0 +1,67 @@
+version: '3.8'
+
+services:
+  # Authentication & Security Services
+  two-fa-api:
+    build: ./2fa-Api
+    ports: ["3001:3000"]
+    
+  account-deletion-api:
+    build: ./Account-Deletion-Api
+    ports: ["3002:3000"]
+    
+  account-verification-otp:
+    build: ./Account-Verification-with-OTP
+    ports: ["3003:3000"]
+    
+  admin-dashboard:
+    build: ./Admin-Dashboard
+    ports: ["3004:3000"]
+    
+  jwt-auth-api:
+    build: ./JWT-Auth-API
+    ports: ["3005:3000"]
+    
+  oauth-auth-api:
+    build: ./oauth-auth-Api
+    ports: ["3006:3000"]
+    
+  password-reset-api:
+    build: ./password-reset-via-email-api
+    ports: ["3007:3000"]
+    
+  role-based-access-api:
+    build: ./Role-Based-Access-Control-Api
+    ports: ["3008:3000"]
+    
+  session-auth-api:
+    build: ./session-auth-api
+    ports: ["3009:3000"]
+    
+  social-login-api:
+    build: ./social-login-API
+    ports: ["3010:3000"]
+    
+  sso-stub-api:
+    build: ./sso-stub-Api
+    ports: ["3011:3000"]
+    
+  multi-tenant-auth:
+    build: ./multi-tenant-auth
+    ports: ["3012:3000"]
+    
+  custom-oauth2-provider:
+    build: ./custom-oauth2-provider
+    ports: ["3013:3000"]
+    
+  auth-middleware-package:
+    build: ./Auth-Middleware-Package
+    ports: ["3014:3000"]
+    
+  user-registration:
+    build: ./User-Registration
+    ports: ["3015:3000"]
+    
+  user-activity-logger:
+    build: ./user-activity-logger
+    ports: ["3016:3000"]

@@ -1,1 +1,22 @@
-{"name":"auth-middleware-package","version":"1.0.0","description":"Reusable JWT auth middleware for Node.js","main":"index.js","type":"module","keywords":["jwt","auth","middleware","express"],"author":"Lakin Adeyemo","license":"MIT","dependencies":{"express":"^5.1.0","jsonwebtoken":"^9.0.0"}}
+{
+  "name": "auth-middleware-package",
+  "version": "1.0.0",
+  "description": "Reusable JWT auth middleware for Node.js",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [
+    "jwt",
+    "auth",
+    "middleware",
+    "express"
+  ],
+  "author": "Lakin Adeyemo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

@@ -1,0 +1,71 @@
+version: '3.8'
+
+services:
+  # Basic APIs
+  todo-list-api:
+    build: "./To-do-List API"
+    ports: ["3020:3000"]
+    
+  scientific-calculator-api:
+    build: ./scientific-calculator-api
+    ports: ["3021:3000"]
+    
+  weather-api:
+    build: ./weather-api
+    ports: ["3022:3000"]
+    
+  quotes-api:
+    build: ./quotes-api
+    ports: ["3023:3000"]
+    
+  currency-converter-api:
+    build: ./currency-converter-api
+    ports: ["3024:3000"]
+    
+  form-submission-handler:
+    build: ./Form-Submission-Handler
+    ports: ["3025:3000"]
+    
+  palindrome-checker-api:
+    build: ./Palindrome-Checker-api
+    ports: ["3026:3000"]
+    
+  notes-api:
+    build: ./Notes-Api
+    ports: ["3027:3000"]
+    
+  basic-blog-posts-api:
+    build: ./Basic-Blog-Posts-Api
+    ports: ["3028:3000"]
+    
+  mock-ecommerce-api:
+    build: ./mock-ecommerce-api
+    ports: ["3029:3000"]
+    
+  ip-lookup-service:
+    build: ./ip-lookup-service
+    ports: ["3030:3000"]
+    
+  contact-form-email-sender:
+    build: ./contact-form-email-sender
+    ports: ["3031:3000"]
+    
+  bmi-api:
+    build: ./bmi-api
+    ports: ["3032:3000"]
+    
+  markdown-api:
+    build: ./markdown-api
+    ports: ["3033:3000"]
+    
+  url-shortener:
+    build: ./url-shortener
+    ports: ["3034:3000"]
+    
+  json-api-app:
+    build: ./json-api-app
+    ports: ["3035:3000"]
+    
+  rest-countries-api:
+    build: ./rest-countries-api
+    ports: ["3036:3000"]

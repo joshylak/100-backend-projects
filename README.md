@@ -95,7 +95,7 @@
 | 91  | 🛠️ DevOps              | API Health Checker                            | Hard          | Node.js             | ✅Done |
 | 92  | 🛠️ DevOps              | Dev Metrics Dashboard                         | Hard          | Node.js             | ✅Done |
 | 93  | 🛠️ DevOps              | Secure Secret Store API                       | Hard          | Node.js             | ✅Done |
-| 94  | 🌐 Deployment          | Dockerize All Projects                        | Hard          | Node.js/Docker      | ☐ Not Started  |
+| 94  | 🌐 Deployment          | Dockerize All Projects                        | Hard          | Node.js/Docker      | ✅Done |
 | 95  | 🌐 Deployment          | Kubernetes-ready Deployment Configs           | Hard          | Node.js/Kubernetes  | ☐ Not Started  |
 | 96  | 🌐 Deployment          | GitHub Actions for CI/CD                      | Hard          | Node.js/GitHub      | ☐ Not Started  |
 | 97  | 🌐 Deployment          | Logging with ELK Stack                        | Hard          | Node.js/ELK Stack   | ☐ Not Started  |

@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  # DevOps & Tools
+  mock-api-generator:
+    build: ./mock-api-generator
+    ports: ["3110:3000"]
+    
+  postman-collection-generator:
+    build: ./postman-collection-generator
+    ports: ["3111:3000"]
+    
+  doc-generator-api:
+    build: ./doc-generator-API
+    ports: ["3112:3000"]
+    
+  load-tester-api:
+    build: ./load-tester-api
+    ports: ["3113:3000"]
+    
+  log-aggregator-api:
+    build: ./log-aggregator-api
+    ports: ["3114:3000"]
+    
+  user-agent-parser-api:
+    build: ./user-agent-parser-api
+    ports: ["3115:3000"]
+    
+  schema-validator-api:
+    build: ./schema-validator-api
+    ports: ["3116:3000"]
+    
+  api-health-checker:
+    build: ./api-health-checker
+    ports: ["3117:3000"]
+    
+  dev-metrics-api:
+    build: ./dev-metrics-api
+    ports: ["3118:3000"]
+    
+  secure-secret-store:
+    build: ./secure-secret-store
+    ports: ["3119:3000"]

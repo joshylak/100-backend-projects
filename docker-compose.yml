@@ -1,0 +1,376 @@
+version: '3.8'
+
+services:
+  # Authentication & Security
+  two-fa-api:
+    build: ./2fa-Api
+    ports: ["3001:3000"]
+    
+  account-deletion-api:
+    build: ./Account-Deletion-Api
+    ports: ["3002:3000"]
+    
+  account-verification-otp:
+    build: ./Account-Verification-with-OTP
+    ports: ["3003:3000"]
+    
+  admin-dashboard:
+    build: ./Admin-Dashboard
+    ports: ["3004:3000"]
+    
+  jwt-auth-api:
+    build: ./JWT-Auth-API
+    ports: ["3005:3000"]
+    
+  oauth-auth-api:
+    build: ./oauth-auth-Api
+    ports: ["3006:3000"]
+    
+  password-reset-api:
+    build: ./password-reset-via-email-api
+    ports: ["3007:3000"]
+    
+  role-based-access-api:
+    build: ./Role-Based-Access-Control-Api
+    ports: ["3008:3000"]
+    
+  session-auth-api:
+    build: ./session-auth-api
+    ports: ["3009:3000"]
+    
+  social-login-api:
+    build: ./social-login-API
+    ports: ["3010:3000"]
+    
+  sso-stub-api:
+    build: ./sso-stub-Api
+    ports: ["3011:3000"]
+    
+  multi-tenant-auth:
+    build: ./multi-tenant-auth
+    ports: ["3012:3000"]
+    
+  custom-oauth2-provider:
+    build: ./custom-oauth2-provider
+    ports: ["3013:3000"]
+    
+  auth-middleware-package:
+    build: ./Auth-Middleware-Package
+    ports: ["3014:3000"]
+    
+  user-registration:
+    build: ./User-Registration
+    ports: ["3015:3000"]
+    
+  user-activity-logger:
+    build: ./user-activity-logger
+    ports: ["3016:3000"]
+
+  # Basic APIs
+  todo-list-api:
+    build: "./To-do-List API"
+    ports: ["3020:3000"]
+    
+  scientific-calculator-api:
+    build: ./scientific-calculator-api
+    ports: ["3021:3000"]
+    
+  weather-api:
+    build: ./weather-api
+    ports: ["3022:3000"]
+    
+  quotes-api:
+    build: ./quotes-api
+    ports: ["3023:3000"]
+    
+  currency-converter-api:
+    build: ./currency-converter-api
+    ports: ["3024:3000"]
+    
+  form-submission-handler:
+    build: ./Form-Submission-Handler
+    ports: ["3025:3000"]
+    
+  palindrome-checker-api:
+    build: ./Palindrome-Checker-api
+    ports: ["3026:3000"]
+    
+  notes-api:
+    build: ./Notes-Api
+    ports: ["3027:3000"]
+    
+  basic-blog-posts-api:
+    build: ./Basic-Blog-Posts-Api
+    ports: ["3028:3000"]
+    
+  mock-ecommerce-api:
+    build: ./mock-ecommerce-api
+    ports: ["3029:3000"]
+    
+  ip-lookup-service:
+    build: ./ip-lookup-service
+    ports: ["3030:3000"]
+    
+  contact-form-email-sender:
+    build: ./contact-form-email-sender
+    ports: ["3031:3000"]
+    
+  bmi-api:
+    build: ./bmi-api
+    ports: ["3032:3000"]
+    
+  markdown-api:
+    build: ./markdown-api
+    ports: ["3033:3000"]
+    
+  url-shortener:
+    build: ./url-shortener
+    ports: ["3034:3000"]
+    
+  json-api-app:
+    build: ./json-api-app
+    ports: ["3035:3000"]
+    
+  rest-countries-api:
+    build: ./rest-countries-api
+    ports: ["3036:3000"]
+
+  # CRUD Applications
+  library-api:
+    build: ./library-Api
+    ports: ["3040:3000"]
+    
+  movie-tv-api:
+    build: ./movie-tv-api
+    ports: ["3041:3000"]
+    
+  fitness-tracker-api:
+    build: ./fitness-tracker-api
+    ports: ["3042:3000"]
+    
+  habit-tracker-api:
+    build: ./habit-tracker-api
+    ports: ["3043:3000"]
+    
+  recipe-manager-api:
+    build: ./recipe-manager-api
+    ports: ["3044:3000"]
+    
+  inventory-system-api:
+    build: ./Inventory-System-Api
+    ports: ["3045:3000"]
+    
+  music-playlist-api:
+    build: ./Music-Playlist-Api
+    ports: ["3046:3000"]
+    
+  book-lending-api:
+    build: ./Book-Lending-Api
+    ports: ["3047:3000"]
+    
+  blog-api:
+    build: ./blog-api
+    ports: ["3048:3000"]
+    
+  bookmark-manager-api:
+    build: ./Bookmark-Manager-Api
+    ports: ["3049:3000"]
+    
+  resume-builder-api:
+    build: ./Resume-Builder-API
+    ports: ["3050:3000"]
+    
+  client-project-tracker-api:
+    build: ./client-project-tracker-API
+    ports: ["3051:3000"]
+    
+  student-management-api:
+    build: ./Student-Management-System-Api
+    ports: ["3052:3000"]
+    
+  travel-bucket-list-api:
+    build: ./Travel-Bucket-List-Api
+    ports: ["3053:3000"]
+    
+  learning-path-tracker:
+    build: ./learning-path-tracker
+    ports: ["3054:3000"]
+
+  # Intermediate Services
+  chat-app-backend:
+    build: ./chat-app-backend-API
+    ports: ["3060:3000"]
+    
+  quiz-app-api:
+    build: ./Quiz-App-API
+    ports: ["3061:3000"]
+    
+  live-poll-api:
+    build: ./live-poll-api
+    ports: ["3062:3000"]
+    
+  expense-tracker-api:
+    build: ./Expense-Tracker-Api
+    ports: ["3063:3000"]
+    
+  notification-service-api:
+    build: ./notification-service-api
+    ports: ["3064:3000"]
+    
+  realtime-voting-api:
+    build: ./realtime-voting-api
+    ports: ["3065:3000"]
+    
+  image-upload-api:
+    build: ./image-upload-api
+    ports: ["3066:3000"]
+    
+  rate-limiter-api:
+    build: ./rate-limiter-api
+    ports: ["3067:3000"]
+    
+  graphql-blog-api:
+    build: ./graphql-blog-API
+    ports: ["3068:3000"]
+    
+  stripe-payment-api:
+    build: ./stripe-payment-api
+    ports: ["3069:3000"]
+    
+  github-activity-tracker-api:
+    build: ./github-activity-tracker-Api
+    ports: ["3070:3000"]
+    
+  webhook-api:
+    build: ./webhook-Api
+    ports: ["3071:3000"]
+    
+  custom-api-gateway:
+    build: ./custom-api-gateway
+    ports: ["3072:3000"]
+    
+  analytics-tracker-api:
+    build: ./analytics-tracker-api
+    ports: ["3073:3000"]
+    
+  collab-notes-api:
+    build: ./collab-notes-api
+    ports: ["3074:3000"]
+    
+  file-compression-api:
+    build: ./file-compression-api
+    ports: ["3075:3000"]
+    
+  geo-tracker-api:
+    build: ./geo-tracker-api
+    ports: ["3076:3000"]
+    
+  task-queue:
+    build: ./task-queue
+    ports: ["3077:3000"]
+    
+  scheduler-api:
+    build: ./scheduler-api
+    ports: ["3078:3000"]
+    
+  rate-limit-api:
+    build: ./rate-limit-API
+    ports: ["3079:3000"]
+    
+  rate-limiter-service:
+    build: ./rate-limiter-service
+    ports: ["3080:3000"]
+
+  # Advanced Services
+  github-ci-service:
+    build: ./github-ci-service
+    ports: ["3090:3000"]
+    
+  chatbot-backend:
+    build: ./chatbot-backend
+    ports: ["3091:3000"]
+    
+  multi-user-doc-editor:
+    build: ./multi-user-doc-editor
+    ports: ["3092:3000"]
+    
+  saas-json-billing:
+    build: ./saas-json-billing
+    ports: ["3093:3000"]
+    
+  video-streaming-backend:
+    build: ./video-streaming-backend
+    ports: ["3094:3000"]
+    
+  api-monitor:
+    build: ./api-monitor
+    ports: ["3095:3000"]
+    
+  headless-cms-json:
+    build: ./headless-cms-json
+    ports: ["3096:3000"]
+    
+  forum-backend:
+    build: ./forum-backend
+    ports: ["3097:3000"]
+    
+  ecommerce-backend-api:
+    build: ./ecommerce-backend-Api
+    ports: ["3098:3000"]
+    
+  microservice-starter-api:
+    build: ./microservice-starter-Api
+    ports: ["3099:3000"]
+    
+  graphql-gateway-api:
+    build: ./graphql-gateway-Api
+    ports: ["3100:3000"]
+    
+  private-file-sharing-api:
+    build: ./private-file-sharing-api
+    ports: ["3101:3000"]
+    
+  multi-region-failover:
+    build: ./multi-region-failover
+    ports: ["3102:3000"]
+
+  # DevOps & Tools
+  mock-api-generator:
+    build: ./mock-api-generator
+    ports: ["3110:3000"]
+    
+  postman-collection-generator:
+    build: ./postman-collection-generator
+    ports: ["3111:3000"]
+    
+  doc-generator-api:
+    build: ./doc-generator-API
+    ports: ["3112:3000"]
+    
+  load-tester-api:
+    build: ./load-tester-api
+    ports: ["3113:3000"]
+    
+  log-aggregator-api:
+    build: ./log-aggregator-api
+    ports: ["3114:3000"]
+    
+  user-agent-parser-api:
+    build: ./user-agent-parser-api
+    ports: ["3115:3000"]
+    
+  schema-validator-api:
+    build: ./schema-validator-api
+    ports: ["3116:3000"]
+    
+  api-health-checker:
+    build: ./api-health-checker
+    ports: ["3117:3000"]
+    
+  dev-metrics-api:
+    build: ./dev-metrics-api
+    ports: ["3118:3000"]
+    
+  secure-secret-store:
+    build: ./secure-secret-store
+    ports: ["3119:3000"]

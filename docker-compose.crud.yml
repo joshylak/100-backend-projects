@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  # CRUD Applications
+  library-api:
+    build: ./library-Api
+    ports: ["3040:3000"]
+    
+  movie-tv-api:
+    build: ./movie-tv-api
+    ports: ["3041:3000"]
+    
+  fitness-tracker-api:
+    build: ./fitness-tracker-api
+    ports: ["3042:3000"]
+    
+  habit-tracker-api:
+    build: ./habit-tracker-api
+    ports: ["3043:3000"]
+    
+  recipe-manager-api:
+    build: ./recipe-manager-api
+    ports: ["3044:3000"]
+    
+  inventory-system-api:
+    build: ./Inventory-System-Api
+    ports: ["3045:3000"]
+    
+  music-playlist-api:
+    build: ./Music-Playlist-Api
+    ports: ["3046:3000"]
+    
+  book-lending-api:
+    build: ./Book-Lending-Api
+    ports: ["3047:3000"]
+    
+  blog-api:
+    build: ./blog-api
+    ports: ["3048:3000"]
+    
+  bookmark-manager-api:
+    build: ./Bookmark-Manager-Api
+    ports: ["3049:3000"]
+    
+  resume-builder-api:
+    build: ./Resume-Builder-API
+    ports: ["3050:3000"]
+    
+  client-project-tracker-api:
+    build: ./client-project-tracker-API
+    ports: ["3051:3000"]
+    
+  student-management-api:
+    build: ./Student-Management-System-Api
+    ports: ["3052:3000"]
+    
+  travel-bucket-list-api:
+    build: ./Travel-Bucket-List-Api
+    ports: ["3053:3000"]
+    
+  learning-path-tracker:
+    build: ./learning-path-tracker
+    ports: ["3054:3000"]
