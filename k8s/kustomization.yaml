@@ -1,0 +1,27 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: backend-projects
+
+resources:
+- namespace.yaml
+- configmap.yaml
+- manifests/
+
+commonLabels:
+  project: 100-backend-projects
+  environment: production
+
+images:
+- name: two-fa-api
+  newTag: latest
+- name: jwt-auth-api
+  newTag: latest
+- name: weather-api
+  newTag: latest
+
+replicas:
+- name: jwt-auth-api
+  count: 3
+- name: weather-api
+  count: 2

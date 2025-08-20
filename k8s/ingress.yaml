@@ -1,0 +1,41 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: backend-projects-ingress
+  namespace: backend-projects
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+spec:
+  rules:
+  - host: api.backend-projects.local
+    http:
+      paths:
+      - path: /auth
+        pathType: Prefix
+        backend:
+          service:
+            name: jwt-auth-api-service
+            port:
+              number: 80
+      - path: /todo
+        pathType: Prefix
+        backend:
+          service:
+            name: todo-list-api-service
+            port:
+              number: 80
+      - path: /weather
+        pathType: Prefix
+        backend:
+          service:
+            name: weather-api-service
+            port:
+              number: 80
+      - path: /quotes
+        pathType: Prefix
+        backend:
+          service:
+            name: quotes-api-service
+            port:
+              number: 80
