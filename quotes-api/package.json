@@ -12,7 +12,7 @@
     "express": "^4.21.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "^3.1.10"
   },
   "author": "Your Name",
   "license": "MIT",
