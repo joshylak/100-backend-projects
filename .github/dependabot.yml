@@ -1,0 +1,40 @@
+version: 2
+updates:
+  # Enable version updates for npm in all service directories
+  - package-ecosystem: "npm"
+    directory: "/2fa-Api"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+  
+  - package-ecosystem: "npm"
+    directory: "/weather-api"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+  
+  - package-ecosystem: "npm"
+    directory: "/quotes-api"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+  
+  - package-ecosystem: "npm"
+    directory: "/JWT-Auth-API"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+  
+  # Docker updates
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+  
+  # GitHub Actions updates
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5

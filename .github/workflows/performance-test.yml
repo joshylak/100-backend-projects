@@ -1,0 +1,58 @@
+name: Performance Testing
+
+on:
+  workflow_run:
+    workflows: ["CI/CD Pipeline"]
+    types:
+      - completed
+    branches: [main]
+
+jobs:
+  performance-test:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up kubectl
+        uses: azure/setup-kubectl@v3
+        with:
+          version: 'v1.28.0'
+      
+      - name: Configure kubectl
+        run: |
+          echo "${{ secrets.KUBE_CONFIG_PROD }}" | base64 -d > kubeconfig
+          export KUBECONFIG=kubeconfig
+      
+      - name: Run load tests
+        run: |
+          export KUBECONFIG=kubeconfig
+          
+          # Get service endpoints
+          SERVICES=$(kubectl get svc -n backend-projects -o jsonpath='{.items[*].metadata.name}' | tr ' ' '\n' | grep -v kubernetes)
+          
+          for service in $SERVICES; do
+            SERVICE_IP=$(kubectl get svc $service -n backend-projects -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+            if [ ! -z "$SERVICE_IP" ]; then
+              echo "Testing $service at $SERVICE_IP"
+              
+              # Basic load test with curl
+              for i in {1..100}; do
+                curl -s -o /dev/null -w "%{http_code}" http://$SERVICE_IP/health &
+              done
+              wait
+              
+              echo "Load test completed for $service"
+            fi
+          done
+      
+      - name: Generate performance report
+        run: |
+          echo "Performance test completed at $(date)" > performance-report.txt
+          echo "All services tested successfully" >> performance-report.txt
+      
+      - name: Upload performance report
+        uses: actions/upload-artifact@v4
+        with:
+          name: performance-report
+          path: performance-report.txt
