@@ -1,5 +1,5 @@
 # Base Dockerfile for all Node.js projects
-FROM node:18
+FROM node:24
 
 # Set work directory
 WORKDIR /app
