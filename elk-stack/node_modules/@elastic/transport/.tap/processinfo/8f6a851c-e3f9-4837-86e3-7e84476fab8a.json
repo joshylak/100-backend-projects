@@ -1,0 +1,302 @@
+{
+  "date": "2025-07-01T21:18:53.737Z",
+  "argv": [
+    "/opt/hostedtoolcache/node/20.19.2/x64/bin/node",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/test/acceptance/product-check.test.ts"
+  ],
+  "execArgv": [
+    "--import=file:///home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@isaacs/ts-node-temp-fork-for-pr-2009/import.mjs",
+    "--import=file:///home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/mock/dist/esm/import.mjs",
+    "--enable-source-maps",
+    "--import=file:///home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/processinfo/dist/esm/import.mjs"
+  ],
+  "NODE_OPTIONS": "\"--import=file:///home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/processinfo/dist/esm/import.mjs\"",
+  "cwd": "/home/runner/work/elastic-transport-js/elastic-transport-js",
+  "pid": 2493,
+  "ppid": 2325,
+  "parent": null,
+  "uuid": "8f6a851c-e3f9-4837-86e3-7e84476fab8a",
+  "files": [
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/test/acceptance/product-check.test.ts",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@isaacs/ts-node-temp-fork-for-pr-2009/import.mjs",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@isaacs/ts-node-temp-fork-for-pr-2009/import-loader.mjs",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/mock/dist/esm/import.mjs",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/mock/dist/esm/mock-service.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/stack/dist/esm/index.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/index.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/is-relative-require.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/mock/dist/esm/export-line.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/mock/dist/esm/munge-mocks.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/mock/dist/esm/service-key.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/mock/dist/esm/resolve-mock-entry-point.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/stack/dist/esm/call-site-like.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/stack/dist/esm/require-resolve.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/get-all-conditional-values.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/get-all-conditions.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/get-unique-condition-sets.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/resolve-all-exports.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/resolve-all-local-imports.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/resolve-conditional-value.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/resolve-import.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/is-windows.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/stack/dist/esm/parse.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/get-conditional-values-list.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/errors.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/get-named-exports-list.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/read-pkg.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/resolve-export.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/star-glob.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/to-path.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/file-exists.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/find-dep-package.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/to-file-url.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/resolve-dependency-export.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/resolve-package-import.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/read-json.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/find-star-match.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/glob/dist/esm/index.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/walk-up-path/dist/esm/index.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/minimatch/dist/esm/index.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/glob/dist/esm/glob.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/glob/dist/esm/has-magic.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/glob/dist/esm/ignore.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/path-scurry/dist/esm/index.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/glob/dist/esm/pattern.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/glob/dist/esm/walker.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@isaacs/brace-expansion/dist/esm/index.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/minimatch/dist/esm/assert-valid-pattern.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/minimatch/dist/esm/ast.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/minimatch/dist/esm/escape.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/minimatch/dist/esm/unescape.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@isaacs/balanced-match/dist/esm/index.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/lru-cache/dist/esm/index.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/minipass/dist/esm/index.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/glob/dist/esm/processor.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/minimatch/dist/esm/brace-expressions.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/mock/dist/esm/loader.mjs",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/mock/dist/esm/hooks.mjs",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/mock/dist/esm/mock-service-client.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/index.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/lib/Diagnostic.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/lib/errors.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/lib/security.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/lib/Transport.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/lib/connection/BaseConnection.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/lib/symbols.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/lib/Serializer.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/lib/connection/index.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/lib/connection/HttpConnection.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/lib/connection/UndiciConnection.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/lib/pool/index.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/lib/pool/BaseConnectionPool.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/lib/pool/WeightedConnectionPool.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/lib/pool/ClusterConnectionPool.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/lib/pool/CloudConnectionPool.js",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/test/utils/index.ts",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/test/utils/buildServer.ts",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/test/utils/MockConnection.ts",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/test/utils/TestClient.ts",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/test/utils/buildCluster.ts",
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/test/utils/buildProxy.ts"
+  ],
+  "sources": {
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/mock/dist/esm/import.mjs": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/mock/src/import.mts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/mock/dist/esm/mock-service.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/mock/src/mock-service.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/stack/dist/esm/index.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/stack/src/index.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/index.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/src/index.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/is-relative-require.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/src/is-relative-require.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/mock/dist/esm/export-line.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/mock/src/export-line.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/mock/dist/esm/munge-mocks.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/mock/src/munge-mocks.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/mock/dist/esm/service-key.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/mock/src/service-key.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/mock/dist/esm/resolve-mock-entry-point.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/mock/src/resolve-mock-entry-point.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/stack/dist/esm/call-site-like.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/stack/src/call-site-like.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/stack/dist/esm/require-resolve.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/stack/src/require-resolve.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/get-all-conditional-values.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/src/get-all-conditional-values.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/get-all-conditions.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/src/get-all-conditions.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/get-unique-condition-sets.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/src/get-unique-condition-sets.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/resolve-all-exports.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/src/resolve-all-exports.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/resolve-all-local-imports.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/src/resolve-all-local-imports.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/resolve-conditional-value.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/src/resolve-conditional-value.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/resolve-import.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/src/resolve-import.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/is-windows.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/src/is-windows.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/stack/dist/esm/parse.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/stack/src/parse.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/get-conditional-values-list.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/src/get-conditional-values-list.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/errors.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/src/errors.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/get-named-exports-list.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/src/get-named-exports-list.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/read-pkg.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/src/read-pkg.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/resolve-export.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/src/resolve-export.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/star-glob.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/src/star-glob.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/to-path.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/src/to-path.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/file-exists.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/src/file-exists.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/find-dep-package.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/src/find-dep-package.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/to-file-url.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/src/to-file-url.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/resolve-dependency-export.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/src/resolve-dependency-export.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/resolve-package-import.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/src/resolve-package-import.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/read-json.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/src/read-json.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/dist/esm/find-star-match.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/resolve-import/src/find-star-match.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/glob/dist/esm/index.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/glob/src/index.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/walk-up-path/dist/esm/index.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/walk-up-path/src/index.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/minimatch/dist/esm/index.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/minimatch/src/index.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/glob/dist/esm/glob.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/glob/src/glob.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/glob/dist/esm/has-magic.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/glob/src/has-magic.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/glob/dist/esm/ignore.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/glob/src/ignore.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/path-scurry/dist/esm/index.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/path-scurry/src/index.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/glob/dist/esm/pattern.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/glob/src/pattern.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/glob/dist/esm/walker.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/glob/src/walker.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@isaacs/brace-expansion/dist/esm/index.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@isaacs/brace-expansion/src/index.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/minimatch/dist/esm/assert-valid-pattern.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/minimatch/src/assert-valid-pattern.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/minimatch/dist/esm/ast.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/minimatch/src/ast.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/minimatch/dist/esm/escape.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/minimatch/src/escape.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/minimatch/dist/esm/unescape.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/minimatch/src/unescape.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@isaacs/balanced-match/dist/esm/index.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@isaacs/balanced-match/src/index.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/lru-cache/dist/esm/index.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/lru-cache/src/index.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/minipass/dist/esm/index.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/minipass/src/index.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/glob/dist/esm/processor.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/glob/src/processor.ts"
+    ],
+    "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/minimatch/dist/esm/brace-expressions.js": [
+      "/home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/minimatch/src/brace-expressions.ts"
+    ]
+  },
+  "root": "8f6a851c-e3f9-4837-86e3-7e84476fab8a",
+  "externalID": "test/acceptance/product-check.test.ts",
+  "code": 0,
+  "signal": null,
+  "runtime": 1079.565793,
+  "globalsAdded": [
+    "__extends",
+    "__assign",
+    "__rest",
+    "__decorate",
+    "__param",
+    "__esDecorate",
+    "__runInitializers",
+    "__propKey",
+    "__setFunctionName",
+    "__metadata",
+    "__awaiter",
+    "__generator",
+    "__exportStar",
+    "__createBinding",
+    "__values",
+    "__read",
+    "__spread",
+    "__spreadArrays",
+    "__spreadArray",
+    "__await",
+    "__asyncGenerator",
+    "__asyncDelegator",
+    "__asyncValues",
+    "__makeTemplateObject",
+    "__importStar",
+    "__importDefault",
+    "__classPrivateFieldGet",
+    "__classPrivateFieldSet",
+    "__classPrivateFieldIn",
+    "__addDisposableResource",
+    "__disposeResources",
+    "__rewriteRelativeImportExtension"
+  ]
+}

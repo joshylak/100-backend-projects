@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@tapjs/core": "file:///home/runner/work/elastic-transport-js/elastic-transport-js/node_modules/@tapjs/core"
+  },
+  "dependencies": {
+    "@tapjs/clock": "^3.0.0"
+  }
+}

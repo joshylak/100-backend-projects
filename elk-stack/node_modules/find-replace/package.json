@@ -1,0 +1,49 @@
+{
+  "name": "find-replace",
+  "author": "Lloyd Brookes <75pound@gmail.com>",
+  "version": "5.0.2",
+  "description": "Replace or remove multiple items in an array.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/75lb/find-replace.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "import": "./index.js",
+    "require": "./dist/index.cjs"
+  },
+  "keywords": [
+    "find",
+    "replace",
+    "array",
+    "remove",
+    "splice"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "test": "npm run dist && npm run test:ci",
+    "test:ci": "75lb-nature test-runner test.js",
+    "docs": "75lb-nature jsdoc2md -t README.hbs index.js > README.md",
+    "dist": "75lb-nature cjs-build index.js && 75lb-nature simple-rollup index.js"
+  },
+  "peerDependencies": {
+    "@75lb/nature": "latest"
+  },
+  "peerDependenciesMeta": {
+    "@75lb/nature": {
+      "optional": true
+    }
+  },
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "standard": {
+    "ignore": [
+      "dist"
+    ]
+  }
+}

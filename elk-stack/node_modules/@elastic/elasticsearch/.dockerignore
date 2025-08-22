@@ -1,0 +1,11 @@
+node_modules
+npm-debug.log
+test/benchmarks
+elasticsearch
+.git
+lib
+junit-output
+.tap
+rest-api-spec
+yaml-rest-tests
+generated-tests

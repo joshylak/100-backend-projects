@@ -1,0 +1,23 @@
+{
+  "name": "elk-stack-logging",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "ELK Stack logging implementation for Node.js - Day 97/100",
+  "main": "example-app.js",
+  "scripts": {
+    "start": "node example-app.js",
+    "dev": "nodemon example-app.js",
+    "elk:up": "docker-compose up -d",
+    "elk:down": "docker-compose down",
+    "elk:logs": "docker-compose logs -f",
+    "test:logs": "node test-logging.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "winston": "^3.11.0",
+    "winston-elasticsearch": "^0.17.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

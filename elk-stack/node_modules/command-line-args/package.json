@@ -1,0 +1,63 @@
+{
+  "name": "command-line-args",
+  "version": "6.0.1",
+  "description": "A mature, feature-complete library to parse command-line options.",
+  "repository": "https://github.com/75lb/command-line-args",
+  "scripts": {
+    "test": "npm run dist && npm run test:ci",
+    "test:ci": "test-runner test/*.js test/*.cjs test/internals/*.js",
+    "docs": "75lb-nature jsdoc2md index.js > doc/API.md && 75lb-nature jsdoc2md lib/option-definition.js > doc/option-definition.md",
+    "dist": "75lb-nature cjs-build index.js"
+  },
+  "type": "module",
+  "exports": {
+    "import": "./index.js",
+    "require": "./dist/index.cjs"
+  },
+  "keywords": [
+    "argv",
+    "parse",
+    "argument",
+    "args",
+    "option",
+    "options",
+    "parser",
+    "parsing",
+    "cli",
+    "command",
+    "line"
+  ],
+  "author": "Lloyd Brookes <opensource@75lb.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.20"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "dist"
+  ],
+  "dependencies": {
+    "array-back": "^6.2.2",
+    "find-replace": "^5.0.2",
+    "lodash.camelcase": "^4.3.0",
+    "typical": "^7.2.0"
+  },
+  "peerDependencies": {
+    "@75lb/nature": "latest"
+  },
+  "peerDependenciesMeta": {
+    "@75lb/nature": {
+      "optional": true
+    }
+  },
+  "standard": {
+    "ignore": [
+      "dist"
+    ],
+    "envs": []
+  },
+  "devDependencies": {
+    "test-runner": "^0.10.1"
+  }
+}
