@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Matcher</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f5f5f5; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #333; margin-bottom: 30px; text-align: center; }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; color: #555; }
+        textarea, input[type="file"] { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
+        textarea { height: 120px; resize: vertical; }
+        button { background: #007bff; color: white; padding: 12px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+        button:hover { background: #0056b3; }
+        .result { margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 5px; }
+        .score { font-size: 24px; font-weight: bold; color: #28a745; margin-bottom: 15px; }
+        .section { margin-bottom: 15px; }
+        .section h3 { color: #333; margin-bottom: 8px; }
+        .list-item { background: white; padding: 8px; margin: 5px 0; border-radius: 3px; border-left: 3px solid #007bff; }
+        .loading { text-align: center; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 AI Resume Matcher</h1>
+        
+        <form id="matchForm">
+            <div class="form-group">
+                <label for="jobDescription">Job Description:</label>
+                <textarea id="jobDescription" placeholder="Paste the job description here..." required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="resumeFile">Upload Resume (PDF - AI will read directly):</label>
+                <input type="file" id="resumeFile" accept=".pdf">
+            </div>
+            
+            <div class="form-group">
+                <label for="resumeText">Or paste resume text:</label>
+                <textarea id="resumeText" placeholder="Paste resume text here..."></textarea>
+            </div>
+            
+            <button type="submit">Match Resume</button>
+        </form>
+        
+        <div id="result" class="result" style="display: none;"></div>
+    </div>
+
+    <script>
+        document.getElementById('matchForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData();
+            const jobDescription = document.getElementById('jobDescription').value;
+            const resumeFile = document.getElementById('resumeFile').files[0];
+            const resumeText = document.getElementById('resumeText').value;
+            
+            if (!jobDescription) {
+                alert('Please enter a job description');
+                return;
+            }
+            
+            if (!resumeFile && !resumeText) {
+                alert('Please upload a resume file or paste resume text');
+                return;
+            }
+            
+            formData.append('jobDescription', jobDescription);
+            if (resumeFile) formData.append('resume', resumeFile);
+            if (resumeText) formData.append('resumeText', resumeText);
+            
+            const resultDiv = document.getElementById('result');
+            resultDiv.style.display = 'block';
+            resultDiv.innerHTML = '<div class="loading">🔄 Analyzing resume...</div>';
+            
+            try {
+                // Test server first
+                console.log('Testing server connection...');
+                const testResponse = await fetch('/');
+                console.log('Server test:', testResponse.status);
+                
+                const response = await fetch('/api/match', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const text = await response.text();
+                
+                if (!text) {
+                    throw new Error('Empty response from server');
+                }
+                
+                let data;
+                try {
+                    data = JSON.parse(text);
+                } catch (parseError) {
+                    console.error('Response text:', text);
+                    throw new Error('Invalid JSON response from server');
+                }
+                
+                if (data.success) {
+                    displayResult(data.data);
+                } else {
+                    resultDiv.innerHTML = `<div style="color: red;">Error: ${data.error || 'Unknown error'}</div>`;
+                }
+            } catch (error) {
+                console.error('Full error:', error);
+                resultDiv.innerHTML = `<div style="color: red;">Error: ${error.message}</div>`;
+            }
+        });
+        
+        function displayResult(data) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `
+                <div class="score">Match Score: ${data.matchScore}%</div>
+                
+                <div class="section">
+                    <h3>📋 Summary</h3>
+                    <div class="list-item">${data.summary}</div>
+                </div>
+                
+                <div class="section">
+                    <h3>✅ Strengths</h3>
+                    ${data.strengths?.map(item => `<div class="list-item">${item}</div>`).join('') || 'None identified'}
+                </div>
+                
+                <div class="section">
+                    <h3>❌ Gaps</h3>
+                    ${data.gaps?.map(item => `<div class="list-item">${item}</div>`).join('') || 'None identified'}
+                </div>
+                
+                <div class="section">
+                    <h3>💡 Recommendations</h3>
+                    ${data.recommendations?.map(item => `<div class="list-item">${item}</div>`).join('') || 'None provided'}
+                </div>
+                
+                <div class="section">
+                    <h3>🔑 Keyword Matches</h3>
+                    ${data.keywordMatches?.map(item => `<div class="list-item">${item}</div>`).join('') || 'None identified'}
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>
