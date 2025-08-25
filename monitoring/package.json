@@ -1,0 +1,22 @@
+{
+  "name": "prometheus-grafana-monitoring",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Prometheus + Grafana monitoring for Node.js - Day 99/100",
+  "main": "example-app.js",
+  "scripts": {
+    "start": "node example-app.js",
+    "dev": "nodemon example-app.js",
+    "monitoring:up": "docker-compose up -d",
+    "monitoring:down": "docker-compose down",
+    "monitoring:logs": "docker-compose logs -f",
+    "test:metrics": "node test-monitoring.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "prom-client": "^15.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
