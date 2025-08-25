@@ -101,4 +101,4 @@
 | 97  | 🌐 Deployment          | Logging with ELK Stack                        | Hard          | Node.js/ELK Stack   | ✅Done |
 | 98  | 🌐 Deployment          | Infrastructure-as-Code (Terraform) for One Project | Hard      | Node.js/Terraform  | ✅Done |
 | 99  | 🌐 Deployment          | Monitoring with Prometheus + Grafana          | Hard          | Node.js/Prometheus  | ✅Done  |
-| 100 | 🧠 AI/ML Integration   | AI-Powered Resume Matcher (Job vs Resume)     | Hard          | Node.js/OpenAI      | ☐ Not Started  |
+| 100 | 🧠 AI/ML Integration   | AI-Powered Resume Matcher (Job vs Resume)     | Hard          | Node.js/GEMINI AI   | ✅Done   |
