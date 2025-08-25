@@ -79,10 +79,10 @@
             try {
                 // Test server first
                 console.log('Testing server connection...');
-                const testResponse = await fetch('/');
+                const testResponse = await fetch('http://localhost:3103/');
                 console.log('Server test:', testResponse.status);
                 
-                const response = await fetch('/api/match', {
+                const response = await fetch('http://localhost:3103/api/match', {
                     method: 'POST',
                     body: formData
                 });

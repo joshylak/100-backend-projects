@@ -10,18 +10,27 @@ const app = express();
 const PORT = process.env.PORT || 3103;
 const upload = multer({ dest: 'uploads/' });
 
-app.use(cors());
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type']
+}));
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use(express.static('public'));
 
-// Direct route - no separate router
+// API route with detailed logging
 app.post('/api/match', upload.single('resume'), async (req, res) => {
+  console.log('=== POST /api/match received ===');
+  console.log('Headers:', req.headers);
+  console.log('Body keys:', Object.keys(req.body));
+  console.log('File:', req.file ? 'Present' : 'None');
+  
   try {
-    console.log('POST /api/match received');
     const { jobDescription, resumeText } = req.body;
     
     if (!jobDescription) {
+      console.log('Missing job description');
       return res.status(400).json({ error: 'Job description is required' });
     }
 
@@ -34,9 +43,11 @@ app.post('/api/match', upload.single('resume'), async (req, res) => {
       console.log('Processing text input');
       matchResult = await matchResume(resumeText, jobDescription);
     } else {
+      console.log('No resume data provided');
       return res.status(400).json({ error: 'Resume file or text is required' });
     }
     
+    console.log('Match successful');
     res.json({
       success: true,
       data: matchResult
@@ -55,12 +66,10 @@ app.get('/', (req, res) => {
   res.json({ message: 'AI Resume Matcher API is running' });
 });
 
-// Add OPTIONS for CORS preflight
-app.options('/api/match', (req, res) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Methods', 'POST, OPTIONS');
-  res.header('Access-Control-Allow-Headers', 'Content-Type');
-  res.sendStatus(200);
+// Catch all undefined routes
+app.all('*', (req, res) => {
+  console.log(`Unhandled ${req.method} request to ${req.path}`);
+  res.status(404).json({ error: 'Route not found' });
 });
 
 app.listen(PORT, () => {
