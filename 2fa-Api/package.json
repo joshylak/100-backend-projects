@@ -12,7 +12,7 @@
   "description": "",
   "dependencies": {
     "body-parser": "^2.2.0",
-    "express": "^5.1.0",
+    "express": "^5.2.1",
     "jsonwebtoken": "^9.0.2",
     "qrcode": "^1.5.4",
     "speakeasy": "^2.0.0"
